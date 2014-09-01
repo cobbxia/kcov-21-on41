@@ -1,0 +1,810 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AddrMap_t	./collector.cc	/^	typedef std::unordered_map<unsigned long, int> AddrMap_t;$/;"	t	class:Collector	file:
+AddrMap_t	./merge-file-parser.cc	/^	typedef std::unordered_map<unsigned long, unsigned int> AddrMap_t;$/;"	t	class:MergeParser	file:
+AddrToBreakpointMap_t	./engines/ptrace.cc	/^	typedef std::unordered_map<unsigned long, int> AddrToBreakpointMap_t;$/;"	t	class:Ptrace	file:
+AddrToHitsMap_t	./reporter.cc	/^		typedef std::unordered_map<unsigned long, int> AddrToHitsMap_t;$/;"	t	class:Reporter::Line	file:
+AddrToLineMap_t	./reporter.cc	/^	typedef std::unordered_map<unsigned long, Line *> AddrToLineMap_t;$/;"	t	class:Reporter	file:
+AddressByFileLine_t	./merge-file-parser.cc	/^	typedef std::unordered_map<uint64_t, unsigned long> AddressByFileLine_t;$/;"	t	class:MergeParser	file:
+BP_MSG	./include/utils.hh	/^	BP_MSG     =   8,$/;"	e	enum:debug_mask
+BashEngine	./engines/bash-engine.cc	/^	BashEngine() :$/;"	f	class:BashEngine
+BashEngine	./engines/bash-engine.cc	/^class BashEngine : public IEngine, public IFileParser$/;"	c	file:
+CMAKE_BINARY_DIR	./Makefile	/^CMAKE_BINARY_DIR = \/home\/mingchao.xiamc\/practice\/c\/kcov\/kcov-21$/;"	m
+CMAKE_COMMAND	./Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	./Makefile	/^CMAKE_SOURCE_DIR = \/home\/mingchao.xiamc\/practice\/c\/kcov\/kcov-21$/;"	m
+COVERAGE_MAGIC	./engines/python-engine.cc	/^const uint64_t COVERAGE_MAGIC = 0x6d6574616c6c6775ULL; \/\/ "metallgut"$/;"	v
+ChildMap_t	./engines/ptrace.cc	/^	typedef std::unordered_map<pid_t, int> ChildMap_t;$/;"	t	class:Ptrace	file:
+CoberturaWriter	./cobertura-writer.cc	/^	CoberturaWriter(IFileParser &parser, IReporter &reporter,$/;"	f	class:CoberturaWriter
+CoberturaWriter	./cobertura-writer.cc	/^class CoberturaWriter : public WriterBase$/;"	c	file:
+Collector	./collector.cc	/^	Collector(IFileParser &fileParser, IEngine &engine, IFilter &filter) :$/;"	f	class:Collector
+Collector	./collector.cc	/^class Collector :$/;"	c	file:
+CollectorListenerList_t	./merge-file-parser.cc	/^	typedef std::vector<ICollector::IListener *> CollectorListenerList_t;$/;"	t	class:MergeParser	file:
+Configuration	./configuration.cc	/^	Configuration()$/;"	f	class:Configuration
+Configuration	./configuration.cc	/^class Configuration : public IConfiguration$/;"	c	file:
+Ctor	./engines/bash-engine.cc	/^		Ctor()$/;"	f	class:BashEngine::Ctor
+Ctor	./engines/bash-engine.cc	/^	class Ctor$/;"	c	class:BashEngine	file:
+Ctor	./engines/kernel-engine.cc	/^		Ctor()$/;"	f	class:KernelEngine::Ctor
+Ctor	./engines/kernel-engine.cc	/^	class Ctor$/;"	c	class:KernelEngine	file:
+Ctor	./engines/ptrace.cc	/^		Ctor()$/;"	f	class:Ptrace::Ctor
+Ctor	./engines/ptrace.cc	/^	class Ctor$/;"	c	class:Ptrace	file:
+Ctor	./engines/python-engine.cc	/^		Ctor()$/;"	f	class:PythonEngine::Ctor
+Ctor	./engines/python-engine.cc	/^	class Ctor$/;"	c	class:PythonEngine	file:
+DummyFilter	./filter.cc	/^	DummyFilter()$/;"	f	class:DummyFilter
+DummyFilter	./filter.cc	/^class DummyFilter : public IFilter$/;"	c	file:
+ELF_MSG	./include/utils.hh	/^	ELF_MSG    =   4,$/;"	e	enum:debug_mask
+EQUALS	./Makefile	/^EQUALS = =$/;"	m
+ElfInstance	./parsers/elf-parser.cc	/^	ElfInstance()$/;"	f	class:ElfInstance
+ElfInstance	./parsers/elf-parser.cc	/^class ElfInstance : public IFileParser$/;"	c	file:
+EngineFactory	./engine-factory.cc	/^	EngineFactory()$/;"	f	class:EngineFactory
+EngineFactory	./engine-factory.cc	/^class EngineFactory : public IEngineFactory$/;"	c	file:
+EngineList_t	./engine-factory.cc	/^	typedef std::vector<IEngine *> EngineList_t;$/;"	t	class:EngineFactory	file:
+Event	./include/engine.hh	/^			Event(enum event_type type = ev_signal, int data = 0, uint64_t address = 0) :$/;"	f	class:kcov::IEngine::Event
+Event	./include/engine.hh	/^		class Event$/;"	c	class:kcov::IEngine
+ExecutionSummary	./include/reporter.hh	/^			ExecutionSummary() : m_lines(0), m_executedLines(0), m_includeInTotals(true)$/;"	f	class:kcov::IReporter::ExecutionSummary
+ExecutionSummary	./include/reporter.hh	/^			ExecutionSummary(unsigned int lines, unsigned int executedLines) :$/;"	f	class:kcov::IReporter::ExecutionSummary
+ExecutionSummary	./include/reporter.hh	/^		class ExecutionSummary$/;"	c	class:kcov::IReporter
+FLG_NONE	./include/file-parser.hh	/^			FLG_NONE = 0,$/;"	e	enum:kcov::IFileParser::FileFlags
+FLG_TYPE_SOLIB	./include/file-parser.hh	/^			FLG_TYPE_SOLIB = 1,$/;"	e	enum:kcov::IFileParser::FileFlags
+File	./merge-file-parser.cc	/^		File(const std::string &filename) :$/;"	f	class:MergeParser::File
+File	./merge-file-parser.cc	/^	class File$/;"	c	class:MergeParser	file:
+File	./writer-base.cc	/^WriterBase::File::File(const std::string &filename) :$/;"	f	class:WriterBase::File
+File	./writer-base.hh	/^		class File$/;"	c	class:kcov::WriterBase
+FileByAddressMap_t	./merge-file-parser.cc	/^	typedef std::unordered_map<unsigned long, File *> FileByAddressMap_t;$/;"	t	class:MergeParser	file:
+FileByNameMap_t	./merge-file-parser.cc	/^	typedef std::unordered_map<std::string, File *> FileByNameMap_t;$/;"	t	class:MergeParser	file:
+FileFlags	./include/file-parser.hh	/^		enum FileFlags$/;"	g	class:kcov::IFileParser
+FileLineByAddress_t	./merge-file-parser.cc	/^	typedef std::unordered_map<unsigned long, uint64_t> FileLineByAddress_t;$/;"	t	class:MergeParser	file:
+FileListenerList_t	./engines/bash-engine.cc	/^	typedef std::vector<IFileListener *> FileListenerList_t;$/;"	t	class:BashEngine	file:
+FileListenerList_t	./engines/python-engine.cc	/^	typedef std::vector<IFileListener *> FileListenerList_t;$/;"	t	class:PythonEngine	file:
+FileListenerList_t	./parsers/elf-parser.cc	/^	typedef std::vector<IFileListener *> FileListenerList_t;$/;"	t	class:ElfInstance	file:
+FileMap_t	./writer-base.hh	/^		typedef std::unordered_map<std::string, File *> FileMap_t;$/;"	t	class:kcov::WriterBase
+Filter	./filter.cc	/^	Filter()$/;"	f	class:Filter
+Filter	./filter.cc	/^class Filter : public IFilter$/;"	c	file:
+FixedAddressList_t	./parsers/elf-parser.cc	/^	typedef std::list<uint64_t> FixedAddressList_t;$/;"	t	class:ElfInstance	file:
+Handler	./include/filter.hh	/^		class Handler$/;"	c	class:kcov::IFilter
+HtmlWriter	./html-writer.cc	/^	HtmlWriter(IFileParser &parser, IReporter &reporter,$/;"	f	class:HtmlWriter
+HtmlWriter	./html-writer.cc	/^class HtmlWriter : public WriterBase$/;"	c	file:
+ICollector	./include/collector.hh	/^	class ICollector$/;"	c	namespace:kcov
+IConfiguration	./include/configuration.hh	/^	class IConfiguration$/;"	c	namespace:kcov
+IEngine	./include/engine.hh	/^	class IEngine$/;"	c	namespace:kcov
+IEngineFactory	./include/engine.hh	/^	class IEngineFactory$/;"	c	namespace:kcov
+IEventListener	./include/engine.hh	/^		class IEventListener$/;"	c	class:kcov::IEngine
+IFileListener	./include/file-parser.hh	/^		class IFileListener$/;"	c	class:kcov::IFileParser
+IFileParser	./include/file-parser.hh	/^	class IFileParser$/;"	c	namespace:kcov
+IFilter	./include/filter.hh	/^	class IFilter$/;"	c	namespace:kcov
+ILineListener	./include/file-parser.hh	/^		class ILineListener$/;"	c	class:kcov::IFileParser
+IListener	./include/collector.hh	/^		class IListener$/;"	c	class:kcov::ICollector
+IMergeParser	./merge-parser.hh	/^	class IMergeParser :$/;"	c	namespace:kcov
+INFO_MSG	./include/utils.hh	/^	INFO_MSG   =   1,$/;"	e	enum:debug_mask
+IOutputHandler	./include/output-handler.hh	/^	class IOutputHandler$/;"	c	namespace:kcov
+IParserManager	./include/file-parser.hh	/^	class IParserManager$/;"	c	namespace:kcov
+IReporter	./include/reporter.hh	/^	class IReporter$/;"	c	namespace:kcov
+IWriter	./include/writer.hh	/^	class IWriter$/;"	c	namespace:kcov
+KCOV_DB_VERSION	./reporter.cc	17;"	d	file:
+KCOV_MAGIC	./reporter.cc	16;"	d	file:
+KCOV_MAGIC	./solib-parser/phdr_data.c	12;"	d	file:
+KCOV_SOLIB_VERSION	./solib-parser/phdr_data.c	13;"	d	file:
+KDIR	./kernel/Makefile	/^KDIR := \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+KernelEngine	./engines/kernel-engine.cc	/^	KernelEngine() :$/;"	f	class:KernelEngine
+KernelEngine	./engines/kernel-engine.cc	/^class KernelEngine : public IEngine$/;"	c	file:
+Line	./reporter.cc	/^		Line(const std::string &file, unsigned int lineNr) :$/;"	f	class:Reporter::Line
+Line	./reporter.cc	/^	class Line$/;"	c	class:Reporter	file:
+LineAddrMap_t	./merge-file-parser.cc	/^	typedef std::unordered_map<unsigned int, AddrMap_t> LineAddrMap_t;$/;"	t	class:MergeParser	file:
+LineExecutionCount	./include/reporter.hh	/^			LineExecutionCount(unsigned int hits, unsigned int possibleHits) :$/;"	f	class:kcov::IReporter::LineExecutionCount
+LineExecutionCount	./include/reporter.hh	/^		class LineExecutionCount$/;"	c	class:kcov::IReporter
+LineIdToAddressMap_t	./engines/bash-engine.cc	/^	typedef std::unordered_map<size_t, uint64_t> LineIdToAddressMap_t;$/;"	t	class:BashEngine	file:
+LineIdToAddressMap_t	./engines/python-engine.cc	/^	typedef std::unordered_map<size_t, uint64_t> LineIdToAddressMap_t;$/;"	t	class:PythonEngine	file:
+LineListenerList_t	./engines/bash-engine.cc	/^	typedef std::vector<ILineListener *> LineListenerList_t;$/;"	t	class:BashEngine	file:
+LineListenerList_t	./engines/python-engine.cc	/^	typedef std::vector<ILineListener *> LineListenerList_t;$/;"	t	class:PythonEngine	file:
+LineListenerList_t	./merge-file-parser.cc	/^	typedef std::vector<IFileParser::ILineListener *> LineListenerList_t;$/;"	t	class:MergeParser	file:
+LineListenerList_t	./parsers/elf-parser.cc	/^	typedef std::vector<ILineListener *> LineListenerList_t;$/;"	t	class:ElfInstance	file:
+LineMap_t	./reporter.cc	/^	typedef std::unordered_map<size_t, Line *> LineMap_t;$/;"	t	class:Reporter	file:
+LineMap_t	./writer-base.hh	/^			typedef std::unordered_map<unsigned int, std::string> LineMap_t;$/;"	t	class:kcov::WriterBase::File
+Listener	./line2addr.cc	/^	Listener(IFileParser &parser, const std::string &filePattern, int lineNr) :$/;"	f	class:Listener
+Listener	./line2addr.cc	/^class Listener : public IFileParser::ILineListener$/;"	c	file:
+ListenerList_t	./collector.cc	/^	typedef std::vector<ICollector::IListener *> ListenerList_t;$/;"	t	class:Collector	file:
+MERGE_MAGIC	./merge-file-parser.cc	23;"	d	file:
+MERGE_VERSION	./merge-file-parser.cc	24;"	d	file:
+MODE_COLLECT_AND_REPORT	./include/configuration.hh	/^			MODE_COLLECT_AND_REPORT = 3,$/;"	e	enum:kcov::IConfiguration::__anon1
+MODE_COLLECT_ONLY	./include/configuration.hh	/^			MODE_COLLECT_ONLY       = 1,$/;"	e	enum:kcov::IConfiguration::__anon1
+MODE_REPORT_ONLY	./include/configuration.hh	/^			MODE_REPORT_ONLY        = 2,$/;"	e	enum:kcov::IConfiguration::__anon1
+MergeParser	./merge-file-parser.cc	/^	MergeParser(IFileParser &localParser,$/;"	f	class:MergeParser
+MergeParser	./merge-file-parser.cc	/^class MergeParser :$/;"	c	file:
+NT_GNU_BUILD_ID	./parsers/elf-parser.cc	23;"	d	file:
+OUTPUT_COVERAGE	./include/configuration.hh	/^			OUTPUT_COVERAGE,$/;"	e	enum:kcov::IConfiguration::OutputType
+OUTPUT_PROFILER	./include/configuration.hh	/^			OUTPUT_PROFILER$/;"	e	enum:kcov::IConfiguration::OutputType
+OutputHandler	./output-handler.cc	/^		OutputHandler(IFileParser &parser, IReporter &reporter) :$/;"	f	class:kcov::OutputHandler
+OutputHandler	./output-handler.cc	/^	class OutputHandler : public IOutputHandler, IFileParser::IFileListener$/;"	c	namespace:kcov	file:
+OutputType	./include/configuration.hh	/^		enum OutputType$/;"	g	class:kcov::IConfiguration
+PTRACE_MSG	./include/utils.hh	/^	PTRACE_MSG =   2,$/;"	e	enum:debug_mask
+PWD	./kernel/Makefile	/^PWD := $(shell pwd)$/;"	m
+ParserList_t	./parser-manager.cc	/^	typedef std::vector<IFileParser *> ParserList_t;$/;"	t	class:ParserManager	file:
+ParserManager	./parser-manager.cc	/^	ParserManager()$/;"	f	class:ParserManager
+ParserManager	./parser-manager.cc	/^class ParserManager : public IParserManager$/;"	c	file:
+PathHandler	./filter.cc	/^		PathHandler() :$/;"	f	class:Filter::PathHandler
+PathHandler	./filter.cc	/^	class PathHandler$/;"	c	class:Filter	file:
+PathMap_t	./filter.cc	/^		typedef std::unordered_map<unsigned int, std::string> PathMap_t;$/;"	t	class:Filter::PathHandler	file:
+PathMap_t	./utils.cc	/^typedef std::unordered_map<std::string, std::string> PathMap_t;$/;"	t	file:
+PatternHandler	./filter.cc	/^		PatternHandler() :$/;"	f	class:Filter::PatternHandler
+PatternHandler	./filter.cc	/^	class PatternHandler$/;"	c	class:Filter	file:
+PatternMap_t	./filter.cc	/^		typedef std::unordered_map<unsigned int, std::string> PatternMap_t;$/;"	t	class:Filter::PatternHandler	file:
+PendingBreakpointList_t	./engines/ptrace.cc	/^	typedef std::vector<unsigned long> PendingBreakpointList_t;$/;"	t	class:Ptrace	file:
+PhdrList_t	./engines/ptrace.cc	/^	typedef std::list<struct phdr_data *> PhdrList_t;$/;"	t	class:Ptrace	file:
+Ptrace	./engines/ptrace.cc	/^	Ptrace() :$/;"	f	class:Ptrace
+Ptrace	./engines/ptrace.cc	/^class Ptrace : public IEngine$/;"	c	file:
+PythonEngine	./engines/python-engine.cc	/^	PythonEngine() :$/;"	f	class:PythonEngine
+PythonEngine	./engines/python-engine.cc	/^class PythonEngine : public IEngine, public IFileParser$/;"	c	file:
+RM	./Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
+ReportedFileMap_t	./engines/bash-engine.cc	/^	typedef std::unordered_map<std::string, bool> ReportedFileMap_t;$/;"	t	class:BashEngine	file:
+ReportedFileMap_t	./engines/python-engine.cc	/^	typedef std::unordered_map<std::string, bool> ReportedFileMap_t;$/;"	t	class:PythonEngine	file:
+Reporter	./reporter.cc	/^	Reporter(IFileParser &fileParser, ICollector &collector, IFilter &filter) :$/;"	f	class:Reporter
+Reporter	./reporter.cc	/^class Reporter : public IReporter, public IFileParser::ILineListener, public ICollector::IListener$/;"	c	file:
+RunMode_t	./include/configuration.hh	/^		} RunMode_t;$/;"	t	class:kcov::IConfiguration	typeref:enum:kcov::IConfiguration::__anon1
+SHELL	./Makefile	/^SHELL = \/bin\/sh$/;"	m
+STATUS_MSG	./include/utils.hh	/^	STATUS_MSG =  16,$/;"	e	enum:debug_mask
+SUFFIXES	./Makefile	/^SUFFIXES =$/;"	m
+SUMMARY_MAGIC	./writer-base.cc	10;"	d	file:
+SUMMARY_VERSION	./writer-base.cc	11;"	d	file:
+SYM_DYNAMIC	./parsers/elf-parser.cc	/^	SYM_DYNAMIC = 1,$/;"	e	enum:SymbolType	file:
+SYM_NORMAL	./parsers/elf-parser.cc	/^	SYM_NORMAL = 0,$/;"	e	enum:SymbolType	file:
+Segment	./parsers/elf-parser.cc	/^		Segment(uint64_t paddr, uint64_t vaddr, uint64_t size) :$/;"	f	class:ElfInstance::Segment
+Segment	./parsers/elf-parser.cc	/^	class Segment$/;"	c	class:ElfInstance	file:
+SegmentList_t	./parsers/elf-parser.cc	/^	typedef std::vector<Segment> SegmentList_t;$/;"	t	class:ElfInstance	file:
+Semaphore	./include/utils.hh	/^	Semaphore()$/;"	f	class:Semaphore
+Semaphore	./include/utils.hh	/^class Semaphore$/;"	c
+StrVecMap_t	./configuration.cc	/^	typedef std::unordered_map<unsigned int, std::string> StrVecMap_t;$/;"	t	class:Configuration	file:
+StringPair_t	./configuration.cc	/^	typedef std::pair<std::string, std::string> StringPair_t;$/;"	t	class:Configuration	file:
+SymbolType	./parsers/elf-parser.cc	/^enum SymbolType$/;"	g	file:
+WriterBase	./writer-base.cc	/^WriterBase::WriterBase(IFileParser &parser, IReporter &reporter) :$/;"	f	class:WriterBase
+WriterBase	./writer-base.hh	/^	class WriterBase : public IFileParser::ILineListener, public IWriter$/;"	c	namespace:kcov
+WriterList_t	./output-handler.cc	/^		typedef std::vector<IWriter *> WriterList_t;$/;"	t	class:kcov::OutputHandler	file:
+_GNU_SOURCE	./parsers/elf-parser.cc	18;"	d	file:
+_GNU_SOURCE	./solib-parser/lib.c	2;"	d	file:
+_GNU_SOURCE	./solib-parser/phdr_data.c	2;"	d	file:
+__library_data	./library.cc	/^std::vector<uint8_t> __library_data = {$/;"	v
+addAddress	./reporter.cc	/^		void addAddress(unsigned long addr)$/;"	f	class:Reporter::Line
+addFile	./engines/bash-engine.cc	/^	bool addFile(const std::string &filename, struct phdr_data_entry *phdr_data)$/;"	f	class:BashEngine
+addFile	./engines/python-engine.cc	/^	bool addFile(const std::string &filename, struct phdr_data_entry *phdr_data)$/;"	f	class:PythonEngine
+addFile	./merge-file-parser.cc	/^	virtual bool addFile(const std::string &filename, struct phdr_data_entry *phdr_data)$/;"	f	class:MergeParser
+addFile	./parsers/elf-parser.cc	/^	bool addFile(const std::string &filename, struct phdr_data_entry *data)$/;"	f	class:ElfInstance
+addLine	./merge-file-parser.cc	/^		void addLine(unsigned int lineNr, uint64_t addr)$/;"	f	class:MergeParser::File
+addr	./include/engine.hh	/^			uint64_t addr;$/;"	m	class:kcov::IEngine::Event
+addressIsValid	./parsers/elf-parser.cc	/^	bool addressIsValid(uint64_t addr)$/;"	f	class:ElfInstance	file:
+address_start	./merge-file-parser.cc	/^	uint32_t address_start;$/;"	m	struct:line_entry	file:
+address_table_offset	./merge-file-parser.cc	/^	uint32_t address_table_offset;$/;"	m	struct:file_data	file:
+adjustAddressBySegment	./parsers/elf-parser.cc	/^	uint64_t adjustAddressBySegment(uint64_t addr)$/;"	f	class:ElfInstance	file:
+arch_adjustPcAfterBreakpoint	./engines/ptrace.cc	/^static void arch_adjustPcAfterBreakpoint(unsigned long *regs)$/;"	f	file:
+arch_clearBreakpoint	./engines/ptrace.cc	/^static unsigned long arch_clearBreakpoint(unsigned long addr, unsigned long old_data, unsigned long cur_data)$/;"	f	file:
+arch_getPcFromRegs	./engines/ptrace.cc	/^static unsigned long arch_getPcFromRegs(unsigned long *regs)$/;"	f	file:
+arch_setupBreakpoint	./engines/ptrace.cc	/^static unsigned long arch_setupBreakpoint(unsigned long addr, unsigned long old_data)$/;"	f	file:
+arm_PC	./engines/ptrace.cc	/^	arm_PC = 15,$/;"	e	enum:__anon2	file:
+at_startup	./solib-parser/lib.c	/^void  __attribute__((constructor))at_startup(void)$/;"	f
+attachPid	./engines/ptrace.cc	/^	bool attachPid(pid_t pid)$/;"	f	class:Ptrace	file:
+base_addr	./kernel/kprobe-coverage.c	/^	unsigned long base_addr;$/;"	m	struct:kprobe_coverage_entry	file:
+be_to_host	./include/swap-endian.hh	/^T be_to_host(T u)$/;"	f
+breakpointToAddrMap_t	./engines/ptrace.cc	/^	typedef std::unordered_map<int, unsigned long> breakpointToAddrMap_t;$/;"	t	class:Ptrace	file:
+checkEvents	./engines/bash-engine.cc	/^	bool checkEvents()$/;"	f	class:BashEngine
+checkEvents	./engines/python-engine.cc	/^	bool checkEvents()$/;"	f	class:PythonEngine
+checkFile	./parsers/elf-parser.cc	/^	bool checkFile()$/;"	f	class:ElfInstance
+checkSolibData	./engines/ptrace.cc	/^	void checkSolibData()$/;"	f	class:Ptrace
+checksum	./merge-file-parser.cc	/^	uint32_t checksum;$/;"	m	struct:file_data	file:
+checksum	./reporter.cc	/^	uint64_t checksum;$/;"	m	struct:marshalHeaderStruct	file:
+childrenLeft	./engines/ptrace.cc	/^	bool childrenLeft()$/;"	f	class:Ptrace
+clearAllBreakpoints	./engines/ptrace.cc	/^	void clearAllBreakpoints()$/;"	f	class:Ptrace
+clearBreakpoint	./engines/bash-engine.cc	/^	bool clearBreakpoint(int id)$/;"	f	class:BashEngine
+clearBreakpoint	./engines/kernel-engine.cc	/^	bool clearBreakpoint(int id)$/;"	f	class:KernelEngine
+clearBreakpoint	./engines/ptrace.cc	/^	bool clearBreakpoint(int id)$/;"	f	class:Ptrace
+clearBreakpoint	./engines/python-engine.cc	/^	bool clearBreakpoint(int id)$/;"	f	class:PythonEngine
+clearHits	./reporter.cc	/^		void clearHits()$/;"	f	class:Reporter::Line
+clear_list	./kernel/kprobe-coverage.c	/^static void clear_list(struct kprobe_coverage *kpc,$/;"	f	file:
+colorFromPercent	./html-writer.cc	/^	std::string colorFromPercent(double percent)$/;"	f	class:HtmlWriter	file:
+concat_files	./utils.cc	/^int concat_files(const char *dst_name, const char *file_a, const char *file_b)$/;"	f
+continueExecution	./engines/bash-engine.cc	/^	bool continueExecution()$/;"	f	class:BashEngine
+continueExecution	./engines/kernel-engine.cc	/^	bool continueExecution()$/;"	f	class:KernelEngine
+continueExecution	./engines/ptrace.cc	/^	bool continueExecution()$/;"	f	class:Ptrace
+continueExecution	./engines/python-engine.cc	/^	bool continueExecution()$/;"	f	class:PythonEngine
+countMetadata	./main.cc	/^unsigned int countMetadata()$/;"	f
+coverage_data	./engines/python-engine.cc	/^struct coverage_data$/;"	s	file:
+cpu_is_little_endian	./include/swap-endian.hh	/^static bool cpu_is_little_endian()$/;"	f
+crc32	./utils.cc	/^uint32_t crc32(const void *buf, size_t len)$/;"	f
+create	./collector.cc	/^ICollector &ICollector::create(IFileParser &elf, IEngine &engine, IFilter &filter)$/;"	f	class:ICollector
+create	./filter.cc	/^IFilter &IFilter::create()$/;"	f	class:IFilter
+create	./output-handler.cc	/^	IOutputHandler &IOutputHandler::create(IFileParser &parser, IReporter &reporter)$/;"	f	class:kcov::IOutputHandler
+create	./reporter.cc	/^IReporter &IReporter::create(IFileParser &parser, ICollector &collector, IFilter &filter)$/;"	f	class:IReporter
+createCoberturaWriter	./cobertura-writer.cc	/^	IWriter &createCoberturaWriter(IFileParser &parser, IReporter &reporter,$/;"	f	namespace:kcov
+createDummy	./filter.cc	/^IFilter &IFilter::createDummy()$/;"	f	class:IFilter
+createHtmlWriter	./html-writer.cc	/^	IWriter &createHtmlWriter(IFileParser &parser, IReporter &reporter,$/;"	f	namespace:kcov
+createMergeParser	./merge-file-parser.cc	/^	IMergeParser &createMergeParser(IFileParser &localParser,$/;"	f	namespace:kcov
+css_text_data	./html-data-files.cc	/^std::vector<uint8_t> css_text_data = {$/;"	v
+ctrlc	./main.cc	/^static void ctrlc(int sig)$/;"	f	file:
+daemonize	./main.cc	/^static void daemonize(void)$/;"	f	file:
+data	./include/engine.hh	/^			int data; \/\/ Typically the breakpoint$/;"	m	class:kcov::IEngine::Event
+data_area	./solib-parser/phdr_data.c	/^static uint8_t data_area[4 * 1024 * 1024];$/;"	v	file:
+db_version	./reporter.cc	/^	uint32_t db_version;$/;"	m	struct:marshalHeaderStruct	file:
+debug_mask	./include/utils.hh	/^enum debug_mask$/;"	g
+debugfs_root	./kernel/kprobe-coverage.c	/^	struct dentry *debugfs_root;$/;"	m	struct:kprobe_coverage	typeref:struct:kprobe_coverage::dentry	file:
+defer_probe	./kernel/kprobe-coverage.c	/^static void defer_probe(struct kprobe_coverage *kpc,$/;"	f	file:
+deferred_list	./kernel/kprobe-coverage.c	/^	struct list_head deferred_list; \/* Probes for not-yet-loaded-modules *\/$/;"	m	struct:kprobe_coverage	typeref:struct:kprobe_coverage::list_head	file:
+dir_concat	./utils.cc	/^std::string dir_concat(const std::string &dir, const std::string &filename)$/;"	f
+do_cleanup	./main.cc	/^static void do_cleanup()$/;"	f	file:
+elfIs64Bit	./parsers/elf-parser.cc	/^	bool elfIs64Bit()$/;"	f	class:ElfInstance
+enable_probe	./kernel/kprobe-coverage.c	/^static int enable_probe(struct kprobe_coverage *kpc,$/;"	f	file:
+entries	./include/phdr_data.h	/^	struct phdr_data_entry entries[];$/;"	m	struct:phdr_data	typeref:struct:phdr_data::phdr_data_entry
+entries	./merge-file-parser.cc	/^	struct line_entry entries[];$/;"	m	struct:file_data	typeref:struct:file_data::line_entry	file:
+error	./include/utils.hh	14;"	d
+escape_helper	./utils.cc	/^static char *escape_helper(char *dst, const char *what)$/;"	f	file:
+escape_html	./utils.cc	/^std::string escape_html(const std::string &str)$/;"	f
+escape_json	./utils.cc	/^std::string escape_json(const std::string &str)$/;"	f
+ev_breakpoint	./include/engine.hh	/^		ev_breakpoint  =  1,$/;"	e	enum:kcov::event_type
+ev_error	./include/engine.hh	/^		ev_error       = -1,$/;"	e	enum:kcov::event_type
+ev_exit	./include/engine.hh	/^		ev_exit        =  3,$/;"	e	enum:kcov::event_type
+ev_exit_first_process	./include/engine.hh	/^		ev_exit_first_process = 4,$/;"	e	enum:kcov::event_type
+ev_signal	./include/engine.hh	/^		ev_signal      =  2,$/;"	e	enum:kcov::event_type
+ev_signal_exit	./include/engine.hh	/^		ev_signal_exit =  5,$/;"	e	enum:kcov::event_type
+eventToName	./collector.cc	/^	std::string eventToName(IEngine::Event ev)$/;"	f	class:Collector	file:
+event_type	./include/engine.hh	/^	enum event_type$/;"	g	namespace:kcov
+expandPath	./configuration.cc	/^	void expandPath(StrVecMap_t &paths)$/;"	f	class:Configuration
+fileIsIncluded	./reporter.cc	/^	bool fileIsIncluded(const std::string &file)$/;"	f	class:Reporter
+fileLineFound	./engines/bash-engine.cc	/^	void fileLineFound(uint32_t crc, const std::string &filename, unsigned int lineNo)$/;"	f	class:BashEngine	file:
+fileLineFound	./engines/python-engine.cc	/^	void fileLineFound(uint32_t crc, const std::string &filename, unsigned int lineNo)$/;"	f	class:PythonEngine	file:
+fileNameCount	./writer-base.cc	/^int WriterBase::File::fileNameCount;$/;"	m	class:WriterBase::File	file:
+fileNameCount	./writer-base.hh	/^			static int fileNameCount;$/;"	m	class:kcov::WriterBase::File
+file_data	./merge-file-parser.cc	/^struct file_data$/;"	s	file:
+file_exists	./utils.cc	/^bool file_exists(const std::string &path)$/;"	f
+file_name_offset	./merge-file-parser.cc	/^	uint32_t file_name_offset;$/;"	m	struct:file_data	file:
+file_readable	./utils.cc	/^bool file_readable(FILE *fp, unsigned int ms)$/;"	f
+filename	./engines/python-engine.cc	/^	const char filename[];$/;"	m	struct:coverage_data	file:
+fmt	./utils.cc	/^std::string fmt(const char *fmt, ...)$/;"	f
+forkChild	./engines/ptrace.cc	/^	bool forkChild(const char *executable)$/;"	f	class:Ptrace	file:
+free_entry	./kernel/kprobe-coverage.c	/^static void free_entry(struct kprobe_coverage_entry *entry)$/;"	f	file:
+g_bashEngine	./engines/bash-engine.cc	/^static BashEngine::Ctor g_bashEngine;$/;"	v	file:
+g_collector	./main.cc	/^static ICollector *g_collector;$/;"	v	file:
+g_engine	./main.cc	/^static IEngine *g_engine;$/;"	v	file:
+g_instance	./engine-factory.cc	/^static EngineFactory *g_instance;$/;"	v	file:
+g_instance	./parser-manager.cc	/^static ParserManager *g_instance;$/;"	v	file:
+g_instance	./parsers/elf-parser.cc	/^static ElfInstance g_instance;$/;"	v	file:
+g_kcov_debug_mask	./utils.cc	/^int g_kcov_debug_mask = STATUS_MSG;$/;"	v
+g_kernelEngine	./engines/kernel-engine.cc	/^static KernelEngine::Ctor g_kernelEngine;$/;"	v	file:
+g_output	./main.cc	/^static IOutputHandler *g_output;$/;"	v	file:
+g_ptraceEngine	./engines/ptrace.cc	/^static Ptrace::Ctor g_ptraceEngine;$/;"	v	file:
+g_pythonEngine	./engines/python-engine.cc	/^static PythonEngine::Ctor g_pythonEngine;$/;"	v	file:
+g_reporter	./main.cc	/^static IReporter *g_reporter;$/;"	v	file:
+generate	./bin-to-c-source.py	/^def generate(data_in, base_name):$/;"	f
+getAligned	./engines/ptrace.cc	/^static unsigned long getAligned(unsigned long addr)$/;"	f	file:
+getArgc	./configuration.cc	/^	unsigned int getArgc()$/;"	f	class:Configuration
+getArgv	./configuration.cc	/^	const char **getArgv()$/;"	f	class:Configuration
+getAttachPid	./configuration.cc	/^	unsigned int getAttachPid()$/;"	f	class:Configuration
+getBaseDirectory	./output-handler.cc	/^		const std::string &getBaseDirectory()$/;"	f	class:kcov::OutputHandler
+getBashCommand	./configuration.cc	/^	const std::string &getBashCommand() const$/;"	f	class:Configuration
+getBinaryName	./configuration.cc	/^	const std::string &getBinaryName()$/;"	f	class:Configuration
+getBinaryPath	./configuration.cc	/^	const std::string &getBinaryPath()$/;"	f	class:Configuration
+getChecksum	./engines/bash-engine.cc	/^	uint64_t getChecksum()$/;"	f	class:BashEngine
+getChecksum	./engines/python-engine.cc	/^	uint64_t getChecksum()$/;"	f	class:PythonEngine
+getChecksum	./merge-file-parser.cc	/^	virtual uint64_t getChecksum()$/;"	f	class:MergeParser
+getChecksum	./parsers/elf-parser.cc	/^	uint64_t getChecksum()$/;"	f	class:ElfInstance
+getCommaSeparatedList	./configuration.cc	/^	StrVecMap_t getCommaSeparatedList(std::string str)$/;"	f	class:Configuration
+getDateNow	./html-writer.cc	/^	std::string getDateNow()$/;"	f	class:HtmlWriter	file:
+getExcludePath	./configuration.cc	/^	std::unordered_map<unsigned int, std::string> &getExcludePath()$/;"	f	class:Configuration
+getExcludePattern	./configuration.cc	/^	std::unordered_map<unsigned int, std::string> &getExcludePattern()$/;"	f	class:Configuration
+getExecutionSummary	./reporter.cc	/^	ExecutionSummary getExecutionSummary()$/;"	f	class:Reporter
+getExitFirstProcess	./configuration.cc	/^	bool getExitFirstProcess()$/;"	f	class:Configuration
+getFixedBreakpoints	./configuration.cc	/^	std::list<uint64_t> getFixedBreakpoints()$/;"	f	class:Configuration
+getFooter	./cobertura-writer.cc	/^	std::string getFooter()$/;"	f	class:CoberturaWriter	file:
+getHeader	./cobertura-writer.cc	/^	std::string getHeader(unsigned int nCodeLines, unsigned int nExecutedLines)$/;"	f	class:CoberturaWriter	file:
+getHeader	./html-writer.cc	/^	std::string getHeader(unsigned int lines, unsigned int executedLines)$/;"	f	class:HtmlWriter	file:
+getHighLimit	./configuration.cc	/^	unsigned int getHighLimit()$/;"	f	class:Configuration
+getIndexHeader	./html-writer.cc	/^	std::string getIndexHeader(const std::string &linkName, const std::string titleName,$/;"	f	class:HtmlWriter	file:
+getInstance	./configuration.cc	/^IConfiguration & IConfiguration::getInstance()$/;"	f	class:IConfiguration
+getInstance	./engine-factory.cc	/^IEngineFactory &IEngineFactory::getInstance()$/;"	f	class:IEngineFactory
+getInstance	./output-handler.cc	/^	IOutputHandler &IOutputHandler::getInstance()$/;"	f	class:kcov::IOutputHandler
+getInstance	./parser-manager.cc	/^IParserManager &IParserManager::getInstance()$/;"	f	class:IParserManager
+getKernelCoveragePath	./configuration.cc	/^	const std::string &getKernelCoveragePath()$/;"	f	class:Configuration
+getLineExecutionCount	./reporter.cc	/^	LineExecutionCount getLineExecutionCount(const std::string &file, unsigned int lineNr)$/;"	f	class:Reporter
+getLineId	./include/lineid.hh	/^	static size_t getLineId(const std::string &fileName, unsigned int nr)$/;"	f	namespace:kcov
+getLowLimit	./configuration.cc	/^	unsigned int getLowLimit()$/;"	f	class:Configuration
+getMarshalEntrySize	./reporter.cc	/^	size_t getMarshalEntrySize()$/;"	f	class:Reporter	file:
+getMarshalSize	./reporter.cc	/^	size_t getMarshalSize()$/;"	f	class:Reporter	file:
+getNewPathPrefix	./configuration.cc	/^	const std::string& getNewPathPrefix()$/;"	f	class:Configuration
+getOnlyIncludePath	./configuration.cc	/^	std::unordered_map<unsigned int, std::string> &getOnlyIncludePath()$/;"	f	class:Configuration
+getOnlyIncludePattern	./configuration.cc	/^	std::unordered_map<unsigned int, std::string> &getOnlyIncludePattern()$/;"	f	class:Configuration
+getOriginalPathPrefix	./configuration.cc	/^	const std::string& getOriginalPathPrefix()$/;"	f	class:Configuration
+getOutDirectory	./configuration.cc	/^	const std::string &getOutDirectory()$/;"	f	class:Configuration
+getOutDirectory	./output-handler.cc	/^		const std::string &getOutDirectory()$/;"	f	class:kcov::OutputHandler
+getOutputInterval	./configuration.cc	/^	unsigned int getOutputInterval()$/;"	f	class:Configuration
+getOutputType	./configuration.cc	/^	enum OutputType getOutputType()$/;"	f	class:Configuration
+getParseSolibs	./configuration.cc	/^	bool getParseSolibs()$/;"	f	class:Configuration
+getPathStripLevel	./configuration.cc	/^	unsigned int getPathStripLevel()$/;"	f	class:Configuration
+getPc	./engines/ptrace.cc	/^	unsigned long getPc(int pid)$/;"	f	class:Ptrace	file:
+getPcFromRegs	./engines/ptrace.cc	/^	unsigned long getPcFromRegs(unsigned long *regs)$/;"	f	class:Ptrace	file:
+getPythonCommand	./configuration.cc	/^	const std::string &getPythonCommand() const$/;"	f	class:Configuration
+getRunningMode	./configuration.cc	/^	RunMode_t getRunningMode()$/;"	f	class:Configuration
+get_aligned	./utils.cc	/^unsigned long get_aligned(unsigned long addr)$/;"	f
+get_aligned_4b	./utils.cc	/^unsigned long get_aligned_4b(unsigned long addr)$/;"	f
+get_file_timestamp	./utils.cc	/^uint64_t get_file_timestamp(const std::string &path)$/;"	f
+get_home	./utils.cc	/^const char *get_home(void)$/;"	f
+get_ms_timestamp	./utils.cc	/^uint64_t get_ms_timestamp(void)$/;"	f
+get_real_path	./utils.cc	/^const std::string &get_real_path(const std::string &path)$/;"	f
+global_kpc	./kernel/kprobe-coverage.c	/^static struct kprobe_coverage *global_kpc;$/;"	v	typeref:struct:kprobe_coverage	file:
+hashAddress	./merge-file-parser.cc	/^	uint64_t hashAddress(const std::string &filename, unsigned int lineNr, uint64_t addr)$/;"	f	class:MergeParser	file:
+hashAddressUnique	./merge-file-parser.cc	/^	uint64_t hashAddressUnique(const std::string &filename, unsigned int lineNr, uint64_t addr)$/;"	f	class:MergeParser	file:
+hit_list	./kernel/kprobe-coverage.c	/^	struct list_head hit_list;      \/* Triggered probes awaiting readout *\/$/;"	m	struct:kprobe_coverage	typeref:struct:kprobe_coverage::list_head	file:
+hits	./reporter.cc	/^		unsigned int hits()$/;"	f	class:Reporter::Line
+i386_EIP	./engines/ptrace.cc	/^	i386_EIP = 12,$/;"	e	enum:__anon2	file:
+icon_amber_data	./html-data-files.cc	/^std::vector<uint8_t> icon_amber_data = {$/;"	v
+icon_glass_data	./html-data-files.cc	/^std::vector<uint8_t> icon_glass_data = {$/;"	v
+includeFile	./filter.cc	/^		bool includeFile(const std::string &file)$/;"	f	class:Filter::PathHandler
+includeFile	./filter.cc	/^		bool includeFile(std::string file)$/;"	f	class:Filter::PatternHandler
+includeInTotals	./writer-base.cc	/^	uint32_t includeInTotals;$/;"	m	struct:summaryStruct	file:
+index_text_data	./html-data-files.cc	/^std::vector<uint8_t> index_text_data = {$/;"	v
+instance	./output-handler.cc	/^	static OutputHandler *instance;$/;"	v	file:
+instructionMap_t	./engines/ptrace.cc	/^	typedef std::unordered_map<unsigned long, unsigned long > instructionMap_t;$/;"	t	class:Ptrace	file:
+isInteger	./configuration.cc	/^	bool isInteger(std::string str)$/;"	f	class:Configuration
+isPythonString	./engines/python-engine.cc	/^	bool isPythonString(const std::string &s)$/;"	f	class:PythonEngine	file:
+isSetup	./filter.cc	/^		bool isSetup()$/;"	f	class:Filter::PathHandler
+isSetup	./filter.cc	/^		bool isSetup()$/;"	f	class:Filter::PatternHandler
+isStringDelimiter	./engines/python-engine.cc	/^	bool isStringDelimiter(char c)$/;"	f	class:PythonEngine	file:
+jquery_text_data	./html-data-files.cc	/^std::vector<uint8_t> jquery_text_data = {$/;"	v
+kcov	./cobertura-writer.cc	/^namespace kcov$/;"	n	file:
+kcov	./cobertura-writer.hh	/^namespace kcov$/;"	n
+kcov	./html-writer.cc	/^namespace kcov$/;"	n	file:
+kcov	./html-writer.hh	/^namespace kcov$/;"	n
+kcov	./include/collector.hh	/^namespace kcov$/;"	n
+kcov	./include/configuration.hh	/^namespace kcov$/;"	n
+kcov	./include/engine.hh	/^namespace kcov$/;"	n
+kcov	./include/file-parser.hh	/^namespace kcov$/;"	n
+kcov	./include/filter.hh	/^namespace kcov$/;"	n
+kcov	./include/lineid.hh	/^namespace kcov$/;"	n
+kcov	./include/manager.hh	/^namespace kcov$/;"	n
+kcov	./include/output-handler.hh	/^namespace kcov$/;"	n
+kcov	./include/reporter.hh	/^namespace kcov$/;"	n
+kcov	./include/writer.hh	/^namespace kcov$/;"	n
+kcov	./merge-file-parser.cc	/^namespace kcov$/;"	n	file:
+kcov	./merge-parser.hh	/^namespace kcov$/;"	n
+kcov	./output-handler.cc	/^namespace kcov$/;"	n	file:
+kcov	./writer-base.hh	/^namespace kcov$/;"	n
+kcov_debug	./include/utils.hh	/^static inline void kcov_debug(enum debug_mask dbg, const char *fmt, ...)$/;"	f
+kcov_text_data	./html-data-files.cc	/^std::vector<uint8_t> kcov_text_data = {$/;"	v
+kill	./engines/bash-engine.cc	/^	void kill(int signal)$/;"	f	class:BashEngine
+kill	./engines/kernel-engine.cc	/^	void kill(int sig)$/;"	f	class:KernelEngine
+kill	./engines/ptrace.cc	/^	void kill(int signal)$/;"	f	class:Ptrace
+kill	./engines/python-engine.cc	/^	void kill(int signal)$/;"	f	class:PythonEngine
+kp	./kernel/kprobe-coverage.c	/^	struct kprobe kp;$/;"	m	struct:kprobe_coverage_entry	typeref:struct:kprobe_coverage_entry::kprobe	file:
+kpc_add_probe	./kernel/kprobe-coverage.c	/^static void kpc_add_probe(struct kprobe_coverage *kpc, const char *module_name,$/;"	f	file:
+kpc_allocate_module_name_index	./kernel/kprobe-coverage.c	/^static int kpc_allocate_module_name_index(struct kprobe_coverage *kpc,$/;"	f	file:
+kpc_clear	./kernel/kprobe-coverage.c	/^static void kpc_clear(struct kprobe_coverage *kpc)$/;"	f	file:
+kpc_control_fops	./kernel/kprobe-coverage.c	/^static const struct file_operations kpc_control_fops =$/;"	v	typeref:struct:file_operations	file:
+kpc_control_open	./kernel/kprobe-coverage.c	/^static int kpc_control_open(struct inode *inode, struct file *file)$/;"	f	file:
+kpc_control_write	./kernel/kprobe-coverage.c	/^static ssize_t kpc_control_write(struct file *file, const char __user *user_buf,$/;"	f	file:
+kpc_exit_module	./kernel/kprobe-coverage.c	/^module_exit(kpc_exit_module);$/;"	v
+kpc_exit_module	./kernel/kprobe-coverage.c	/^static void __exit kpc_exit_module(void)$/;"	f	file:
+kpc_handle_coming_module	./kernel/kprobe-coverage.c	/^static void kpc_handle_coming_module(struct kprobe_coverage *kpc,$/;"	f	file:
+kpc_handle_going_module	./kernel/kprobe-coverage.c	/^static void kpc_handle_going_module(struct kprobe_coverage *kpc,$/;"	f	file:
+kpc_init	./kernel/kprobe-coverage.c	/^static int __init kpc_init(struct kprobe_coverage *kpc)$/;"	f	file:
+kpc_init_module	./kernel/kprobe-coverage.c	/^module_init(kpc_init_module);$/;"	v
+kpc_init_module	./kernel/kprobe-coverage.c	/^static int __init kpc_init_module(void)$/;"	f	file:
+kpc_module_notifier	./kernel/kprobe-coverage.c	/^static int kpc_module_notifier(struct notifier_block *nb,$/;"	f	file:
+kpc_module_notifier_block	./kernel/kprobe-coverage.c	/^static struct notifier_block kpc_module_notifier_block =$/;"	v	typeref:struct:notifier_block	file:
+kpc_pre_handler	./kernel/kprobe-coverage.c	/^static int kpc_pre_handler(struct kprobe *kp, struct pt_regs *regs)$/;"	f	file:
+kpc_probe_work	./kernel/kprobe-coverage.c	/^static void kpc_probe_work(struct work_struct *work)$/;"	f	file:
+kpc_seq_next	./kernel/kprobe-coverage.c	/^static void *kpc_seq_next(struct seq_file *s, void *v, loff_t *pos)$/;"	f	file:
+kpc_seq_ops	./kernel/kprobe-coverage.c	/^static struct seq_operations kpc_seq_ops =$/;"	v	typeref:struct:seq_operations	file:
+kpc_seq_show	./kernel/kprobe-coverage.c	/^static int kpc_seq_show(struct seq_file *s, void *v)$/;"	f	file:
+kpc_seq_start	./kernel/kprobe-coverage.c	/^static void *kpc_seq_start(struct seq_file *s, loff_t *pos)$/;"	f	file:
+kpc_seq_stop	./kernel/kprobe-coverage.c	/^static void kpc_seq_stop(struct seq_file *s, void *v)$/;"	f	file:
+kpc_show_fops	./kernel/kprobe-coverage.c	/^static const struct file_operations kpc_show_fops =$/;"	v	typeref:struct:file_operations	file:
+kpc_show_open	./kernel/kprobe-coverage.c	/^static int kpc_show_open(struct inode *inode, struct file *file)$/;"	f	file:
+kpc_unlink_next	./kernel/kprobe-coverage.c	/^static void *kpc_unlink_next(struct kprobe_coverage *kpc)$/;"	f	file:
+kprobe_coverage	./kernel/kprobe-coverage.c	/^struct kprobe_coverage$/;"	s	file:
+kprobe_coverage_entry	./kernel/kprobe-coverage.c	/^struct kprobe_coverage_entry$/;"	s	file:
+le_to_host	./include/swap-endian.hh	/^T le_to_host(T u)$/;"	f
+lh	./kernel/kprobe-coverage.c	/^	struct list_head lh;$/;"	m	struct:kprobe_coverage_entry	typeref:struct:kprobe_coverage_entry::list_head	file:
+line	./engines/python-engine.cc	/^	uint32_t line;$/;"	m	struct:coverage_data	file:
+line	./merge-file-parser.cc	/^	uint32_t line;$/;"	m	struct:line_entry	file:
+lineIsCode	./reporter.cc	/^	bool lineIsCode(const std::string &file, unsigned int lineNr)$/;"	f	class:Reporter
+line_entry	./merge-file-parser.cc	/^struct line_entry$/;"	s	file:
+lock	./kernel/kprobe-coverage.c	/^	struct mutex lock;$/;"	m	struct:kprobe_coverage	typeref:struct:kprobe_coverage::mutex	file:
+m_activeChild	./engines/ptrace.cc	/^	pid_t m_activeChild;$/;"	m	class:Ptrace	file:
+m_addrHits	./merge-file-parser.cc	/^		AddrMap_t m_addrHits;$/;"	m	class:MergeParser::File	file:
+m_addrToBreakpointMap	./engines/ptrace.cc	/^	AddrToBreakpointMap_t m_addrToBreakpointMap;$/;"	m	class:Ptrace	file:
+m_addrToLine	./reporter.cc	/^	AddrToLineMap_t m_addrToLine;$/;"	m	class:Reporter	file:
+m_addressByFileLine	./merge-file-parser.cc	/^	AddressByFileLine_t m_addressByFileLine;$/;"	m	class:MergeParser	file:
+m_addresses	./engines/kernel-engine.cc	/^	std::unordered_map<unsigned long, bool> m_addresses;$/;"	m	class:KernelEngine	file:
+m_addrs	./collector.cc	/^	AddrMap_t m_addrs;$/;"	m	class:Collector	file:
+m_addrs	./reporter.cc	/^		AddrToHitsMap_t m_addrs;$/;"	m	class:Reporter::Line	file:
+m_argc	./configuration.cc	/^	unsigned int m_argc;$/;"	m	class:Configuration	file:
+m_baseDirectory	./merge-file-parser.cc	/^	const std::string m_baseDirectory;$/;"	m	class:MergeParser	file:
+m_baseDirectory	./output-handler.cc	/^		std::string m_baseDirectory;$/;"	m	class:kcov::OutputHandler	file:
+m_bashCommand	./configuration.cc	/^	std::string m_bashCommand;$/;"	m	class:Configuration	file:
+m_binaryName	./configuration.cc	/^	std::string m_binaryName;$/;"	m	class:Configuration	file:
+m_binaryPath	./configuration.cc	/^	std::string m_binaryPath;$/;"	m	class:Configuration	file:
+m_breakpointId	./engines/ptrace.cc	/^	int m_breakpointId;$/;"	m	class:Ptrace	file:
+m_breakpointToAddrMap	./engines/ptrace.cc	/^	breakpointToAddrMap_t m_breakpointToAddrMap;$/;"	m	class:Ptrace	file:
+m_buildId	./parsers/elf-parser.cc	/^	std::string m_buildId;$/;"	m	class:ElfInstance	file:
+m_checksum	./merge-file-parser.cc	/^		uint32_t m_checksum;$/;"	m	class:MergeParser::File	file:
+m_checksum	./parsers/elf-parser.cc	/^	uint64_t m_checksum;$/;"	m	class:ElfInstance	file:
+m_child	./engines/bash-engine.cc	/^	pid_t m_child;$/;"	m	class:BashEngine	file:
+m_child	./engines/ptrace.cc	/^	pid_t m_child;$/;"	m	class:Ptrace	file:
+m_child	./engines/python-engine.cc	/^	pid_t m_child;$/;"	m	class:PythonEngine	file:
+m_children	./engines/ptrace.cc	/^	ChildMap_t m_children;$/;"	m	class:Ptrace	file:
+m_codeLines	./writer-base.hh	/^			unsigned int m_codeLines;$/;"	m	class:kcov::WriterBase::File
+m_collector	./reporter.cc	/^	ICollector &m_collector;$/;"	m	class:Reporter	file:
+m_collectorListeners	./merge-file-parser.cc	/^	CollectorListenerList_t m_collectorListeners;$/;"	m	class:MergeParser	file:
+m_commonPath	./writer-base.hh	/^		std::string m_commonPath;$/;"	m	class:kcov::WriterBase
+m_control	./engines/kernel-engine.cc	/^	FILE *m_control;$/;"	m	class:KernelEngine	file:
+m_curSegments	./parsers/elf-parser.cc	/^	SegmentList_t m_curSegments;$/;"	m	class:ElfInstance	file:
+m_currentAddress	./engines/bash-engine.cc	/^	uint64_t m_currentAddress;$/;"	m	class:BashEngine	file:
+m_currentAddress	./engines/python-engine.cc	/^	uint64_t m_currentAddress;$/;"	m	class:PythonEngine	file:
+m_dbFileName	./output-handler.cc	/^		std::string m_dbFileName;$/;"	m	class:kcov::OutputHandler	file:
+m_elf	./engines/ptrace.cc	/^	IFileParser *m_elf;$/;"	m	class:Ptrace	file:
+m_elf	./parsers/elf-parser.cc	/^	struct Elf *m_elf;$/;"	m	class:ElfInstance	typeref:struct:ElfInstance::Elf	file:
+m_elfIs32Bit	./parsers/elf-parser.cc	/^	bool m_elfIs32Bit;$/;"	m	class:ElfInstance	file:
+m_engine	./collector.cc	/^	IEngine &m_engine;$/;"	m	class:Collector	file:
+m_engines	./engine-factory.cc	/^	EngineList_t m_engines;$/;"	m	class:EngineFactory	file:
+m_envString	./engines/ptrace.cc	/^	char *m_envString;$/;"	m	class:Ptrace	file:
+m_excludePath	./configuration.cc	/^	StrVecMap_t m_excludePath;$/;"	m	class:Configuration	file:
+m_excludePaths	./filter.cc	/^		PathMap_t &m_excludePaths;$/;"	m	class:Filter::PathHandler	file:
+m_excludePattern	./configuration.cc	/^	StrVecMap_t m_excludePattern;$/;"	m	class:Configuration	file:
+m_excludePatterns	./filter.cc	/^		PatternMap_t &m_excludePatterns;$/;"	m	class:Filter::PatternHandler	file:
+m_executableSegments	./parsers/elf-parser.cc	/^	SegmentList_t m_executableSegments;$/;"	m	class:ElfInstance	file:
+m_executedLines	./include/reporter.hh	/^			unsigned int m_executedLines;$/;"	m	class:kcov::IReporter::ExecutionSummary
+m_executedLines	./writer-base.hh	/^			unsigned int m_executedLines;$/;"	m	class:kcov::WriterBase::File
+m_exitCode	./collector.cc	/^	int m_exitCode;$/;"	m	class:Collector	file:
+m_exitFirstProcess	./configuration.cc	/^	bool m_exitFirstProcess;$/;"	m	class:Configuration	file:
+m_file	./reporter.cc	/^		std::string m_file;$/;"	m	class:Reporter::Line	file:
+m_fileLineByAddress	./merge-file-parser.cc	/^	FileLineByAddress_t m_fileLineByAddress;$/;"	m	class:MergeParser	file:
+m_fileListeners	./engines/bash-engine.cc	/^	FileListenerList_t m_fileListeners;$/;"	m	class:BashEngine	file:
+m_fileListeners	./engines/python-engine.cc	/^	FileListenerList_t m_fileListeners;$/;"	m	class:PythonEngine	file:
+m_fileListeners	./parsers/elf-parser.cc	/^	FileListenerList_t m_fileListeners;$/;"	m	class:ElfInstance	file:
+m_fileName	./writer-base.hh	/^			std::string m_fileName;$/;"	m	class:kcov::WriterBase::File
+m_fileParser	./collector.cc	/^	IFileParser &m_fileParser;$/;"	m	class:Collector	file:
+m_fileParser	./reporter.cc	/^	IFileParser &m_fileParser;$/;"	m	class:Reporter	file:
+m_fileParser	./writer-base.hh	/^		IFileParser &m_fileParser;$/;"	m	class:kcov::WriterBase
+m_filePattern	./line2addr.cc	/^	const std::string m_filePattern;$/;"	m	class:Listener	file:
+m_fileTimestamp	./merge-file-parser.cc	/^		uint64_t m_fileTimestamp;$/;"	m	class:MergeParser::File	file:
+m_filename	./merge-file-parser.cc	/^		std::string m_filename;$/;"	m	class:MergeParser::File	file:
+m_filename	./parsers/elf-parser.cc	/^	std::string m_filename;$/;"	m	class:ElfInstance	file:
+m_files	./merge-file-parser.cc	/^	FileByNameMap_t m_files;$/;"	m	class:MergeParser	file:
+m_files	./writer-base.hh	/^		FileMap_t m_files;$/;"	m	class:kcov::WriterBase
+m_filesByAddress	./merge-file-parser.cc	/^	FileByAddressMap_t m_filesByAddress;$/;"	m	class:MergeParser	file:
+m_filter	./collector.cc	/^	IFilter &m_filter;$/;"	m	class:Collector	file:
+m_filter	./merge-file-parser.cc	/^	IFilter &m_filter;$/;"	m	class:MergeParser	file:
+m_filter	./reporter.cc	/^	IFilter &m_filter;$/;"	m	class:Reporter	file:
+m_firstBreakpoint	./engines/ptrace.cc	/^	bool m_firstBreakpoint;$/;"	m	class:Ptrace	file:
+m_firstChild	./engines/ptrace.cc	/^	pid_t m_firstChild;$/;"	m	class:Ptrace	file:
+m_fixedAddresses	./parsers/elf-parser.cc	/^	FixedAddressList_t m_fixedAddresses;$/;"	m	class:ElfInstance	file:
+m_fixedBreakpoints	./configuration.cc	/^	std::list<uint64_t> m_fixedBreakpoints;$/;"	m	class:Configuration	file:
+m_highLimit	./configuration.cc	/^	unsigned int m_highLimit;$/;"	m	class:Configuration	file:
+m_hits	./include/reporter.hh	/^			unsigned int m_hits;$/;"	m	class:kcov::IReporter::LineExecutionCount
+m_includeInTotals	./html-writer.cc	/^	bool m_includeInTotals;$/;"	m	class:HtmlWriter	file:
+m_includeInTotals	./include/reporter.hh	/^			unsigned int m_includeInTotals;$/;"	m	class:kcov::IReporter::ExecutionSummary
+m_includePaths	./filter.cc	/^		PathMap_t &m_includePaths;$/;"	m	class:Filter::PathHandler	file:
+m_includePatterns	./filter.cc	/^		PatternMap_t &m_includePatterns;$/;"	m	class:Filter::PatternHandler	file:
+m_indexDirectory	./html-writer.cc	/^	std::string m_indexDirectory;$/;"	m	class:HtmlWriter	file:
+m_initialized	./parsers/elf-parser.cc	/^	bool m_initialized;$/;"	m	class:ElfInstance	file:
+m_instructionMap	./engines/ptrace.cc	/^	instructionMap_t m_instructionMap;$/;"	m	class:Ptrace	file:
+m_isMainFile	./parsers/elf-parser.cc	/^	bool m_isMainFile;$/;"	m	class:ElfInstance	file:
+m_jsonOutFileName	./writer-base.hh	/^			std::string m_jsonOutFileName;$/;"	m	class:kcov::WriterBase::File
+m_kernelCoveragePath	./configuration.cc	/^	std::string m_kernelCoveragePath;$/;"	m	class:Configuration	file:
+m_lastLineNr	./writer-base.hh	/^			unsigned int m_lastLineNr;$/;"	m	class:kcov::WriterBase::File
+m_ldPreloadString	./engines/ptrace.cc	/^	char *m_ldPreloadString;$/;"	m	class:Ptrace	file:
+m_lineIdToAddress	./engines/bash-engine.cc	/^	LineIdToAddressMap_t m_lineIdToAddress;$/;"	m	class:BashEngine	file:
+m_lineIdToAddress	./engines/python-engine.cc	/^	LineIdToAddressMap_t m_lineIdToAddress;$/;"	m	class:PythonEngine	file:
+m_lineListeners	./engines/bash-engine.cc	/^	LineListenerList_t m_lineListeners;$/;"	m	class:BashEngine	file:
+m_lineListeners	./engines/python-engine.cc	/^	LineListenerList_t m_lineListeners;$/;"	m	class:PythonEngine	file:
+m_lineListeners	./merge-file-parser.cc	/^	LineListenerList_t m_lineListeners;$/;"	m	class:MergeParser	file:
+m_lineListeners	./parsers/elf-parser.cc	/^	LineListenerList_t m_lineListeners;$/;"	m	class:ElfInstance	file:
+m_lineMap	./writer-base.hh	/^			LineMap_t m_lineMap;$/;"	m	class:kcov::WriterBase::File
+m_lineNr	./line2addr.cc	/^	int m_lineNr;$/;"	m	class:Listener	file:
+m_lineNr	./reporter.cc	/^		unsigned int m_lineNr;$/;"	m	class:Reporter::Line	file:
+m_lines	./include/reporter.hh	/^			unsigned int m_lines;$/;"	m	class:kcov::IReporter::ExecutionSummary
+m_lines	./merge-file-parser.cc	/^		LineAddrMap_t m_lines;$/;"	m	class:MergeParser::File	file:
+m_lines	./reporter.cc	/^	LineMap_t m_lines;$/;"	m	class:Reporter	file:
+m_listener	./engines/bash-engine.cc	/^	IEventListener *m_listener;$/;"	m	class:BashEngine	file:
+m_listener	./engines/kernel-engine.cc	/^	IEventListener *m_listener;$/;"	m	class:KernelEngine	file:
+m_listener	./engines/ptrace.cc	/^	IEventListener *m_listener;$/;"	m	class:Ptrace	file:
+m_listener	./engines/python-engine.cc	/^	IEventListener *m_listener;$/;"	m	class:PythonEngine	file:
+m_listeners	./collector.cc	/^	ListenerList_t m_listeners;$/;"	m	class:Collector	file:
+m_local	./merge-file-parser.cc	/^		bool m_local;$/;"	m	class:MergeParser::File	file:
+m_lowLimit	./configuration.cc	/^	unsigned int m_lowLimit;$/;"	m	class:Configuration	file:
+m_module	./engines/kernel-engine.cc	/^	std::string m_module;$/;"	m	class:KernelEngine	file:
+m_name	./html-writer.cc	/^	std::string m_name;$/;"	m	class:HtmlWriter	file:
+m_name	./writer-base.hh	/^			std::string m_name;$/;"	m	class:kcov::WriterBase::File
+m_newPathPrefix	./configuration.cc	/^	std::string m_newPathPrefix;$/;"	m	class:Configuration	file:
+m_newRoot	./parsers/elf-parser.cc	/^	std::string m_newRoot;$/;"	m	class:ElfInstance	file:
+m_onlyIncludePath	./configuration.cc	/^	StrVecMap_t m_onlyIncludePath;$/;"	m	class:Configuration	file:
+m_onlyIncludePattern	./configuration.cc	/^	StrVecMap_t m_onlyIncludePattern;$/;"	m	class:Configuration	file:
+m_origRoot	./parsers/elf-parser.cc	/^	std::string m_origRoot;$/;"	m	class:ElfInstance	file:
+m_originalPathPrefix	./configuration.cc	/^	std::string m_originalPathPrefix;$/;"	m	class:Configuration	file:
+m_outDirectory	./configuration.cc	/^	std::string m_outDirectory;$/;"	m	class:Configuration	file:
+m_outDirectory	./html-writer.cc	/^	std::string m_outDirectory;$/;"	m	class:HtmlWriter	file:
+m_outDirectory	./output-handler.cc	/^		std::string m_outDirectory;$/;"	m	class:kcov::OutputHandler	file:
+m_outFile	./cobertura-writer.cc	/^	std::string m_outFile;$/;"	m	class:CoberturaWriter	file:
+m_outFileName	./writer-base.hh	/^			std::string m_outFileName;$/;"	m	class:kcov::WriterBase::File
+m_outputDirectory	./merge-file-parser.cc	/^	const std::string m_outputDirectory;$/;"	m	class:MergeParser	file:
+m_outputInterval	./configuration.cc	/^	unsigned int m_outputInterval;$/;"	m	class:Configuration	file:
+m_outputType	./configuration.cc	/^	enum OutputType m_outputType;$/;"	m	class:Configuration	typeref:enum:Configuration::OutputType	file:
+m_paddr	./parsers/elf-parser.cc	/^		uint64_t m_paddr;$/;"	m	class:ElfInstance::Segment	file:
+m_parentCpu	./engines/ptrace.cc	/^	int m_parentCpu;$/;"	m	class:Ptrace	file:
+m_parseSolibs	./configuration.cc	/^	bool m_parseSolibs;$/;"	m	class:Configuration	file:
+m_parsers	./parser-manager.cc	/^	ParserList_t m_parsers;$/;"	m	class:ParserManager	file:
+m_pathHandler	./filter.cc	/^	PathHandler *m_pathHandler;$/;"	m	class:Filter	file:
+m_pathStripLevel	./configuration.cc	/^	unsigned int m_pathStripLevel;$/;"	m	class:Configuration	file:
+m_patternHandler	./filter.cc	/^	PatternHandler *m_patternHandler;$/;"	m	class:Filter	file:
+m_pendingBreakpoints	./engines/ptrace.cc	/^	PendingBreakpointList_t m_pendingBreakpoints;$/;"	m	class:Ptrace	file:
+m_phdrListMutex	./engines/ptrace.cc	/^	std::mutex m_phdrListMutex;$/;"	m	class:Ptrace	file:
+m_phdrs	./engines/ptrace.cc	/^	PhdrList_t m_phdrs;$/;"	m	class:Ptrace	file:
+m_pipe	./engines/python-engine.cc	/^	FILE *m_pipe;$/;"	m	class:PythonEngine	file:
+m_possibleHits	./include/reporter.hh	/^			unsigned int m_possibleHits;$/;"	m	class:kcov::IReporter::LineExecutionCount
+m_printUncommon	./configuration.cc	/^	bool m_printUncommon;$/;"	m	class:Configuration	file:
+m_programArgs	./configuration.cc	/^	const char **m_programArgs;$/;"	m	class:Configuration	file:
+m_ptracePid	./configuration.cc	/^	unsigned int m_ptracePid;$/;"	m	class:Configuration	file:
+m_pythonCommand	./configuration.cc	/^	std::string m_pythonCommand;$/;"	m	class:Configuration	file:
+m_reportedFiles	./engines/bash-engine.cc	/^	ReportedFileMap_t m_reportedFiles;$/;"	m	class:BashEngine	file:
+m_reportedFiles	./engines/python-engine.cc	/^	ReportedFileMap_t m_reportedFiles;$/;"	m	class:PythonEngine	file:
+m_reporter	./output-handler.cc	/^		IReporter &m_reporter;$/;"	m	class:kcov::OutputHandler	file:
+m_reporter	./writer-base.hh	/^		IReporter &m_reporter;$/;"	m	class:kcov::WriterBase
+m_runMode	./configuration.cc	/^	RunMode_t m_runMode;$/;"	m	class:Configuration	file:
+m_sem	./include/utils.hh	/^	sem_t m_sem;$/;"	m	class:Semaphore
+m_show	./engines/kernel-engine.cc	/^	FILE *m_show;$/;"	m	class:KernelEngine	file:
+m_signal	./engines/ptrace.cc	/^	unsigned long m_signal;$/;"	m	class:Ptrace	file:
+m_size	./parsers/elf-parser.cc	/^		size_t m_size;$/;"	m	class:ElfInstance::Segment	file:
+m_solibDataReadSemaphore	./engines/ptrace.cc	/^	Semaphore m_solibDataReadSemaphore;$/;"	m	class:Ptrace	file:
+m_solibFd	./engines/ptrace.cc	/^	int m_solibFd;$/;"	m	class:Ptrace	file:
+m_solibPath	./engines/ptrace.cc	/^	std::string m_solibPath;$/;"	m	class:Ptrace	file:
+m_solibThread	./engines/ptrace.cc	/^	pthread_t m_solibThread;$/;"	m	class:Ptrace	file:
+m_solibThreadValid	./engines/ptrace.cc	/^	bool m_solibThreadValid;$/;"	m	class:Ptrace	file:
+m_stderr	./engines/bash-engine.cc	/^	FILE *m_stderr;$/;"	m	class:BashEngine	file:
+m_summaryDbFileName	./html-writer.cc	/^	std::string m_summaryDbFileName;$/;"	m	class:HtmlWriter	file:
+m_summaryDbFileName	./output-handler.cc	/^		std::string m_summaryDbFileName;$/;"	m	class:kcov::OutputHandler	file:
+m_title	./configuration.cc	/^	std::string m_title;$/;"	m	class:Configuration	file:
+m_unmarshalData	./output-handler.cc	/^		void *m_unmarshalData;$/;"	m	class:kcov::OutputHandler	file:
+m_unmarshalSize	./output-handler.cc	/^		size_t m_unmarshalSize;$/;"	m	class:kcov::OutputHandler	file:
+m_vaddr	./parsers/elf-parser.cc	/^		uint64_t m_vaddr;$/;"	m	class:ElfInstance::Segment	file:
+m_writers	./output-handler.cc	/^		WriterList_t m_writers;$/;"	m	class:kcov::OutputHandler	file:
+machine_is_64bit	./utils.cc	/^bool machine_is_64bit(void)$/;"	f
+magic	./engines/python-engine.cc	/^	uint64_t magic;$/;"	m	struct:coverage_data	file:
+magic	./include/phdr_data.h	/^	uint32_t magic;$/;"	m	struct:phdr_data
+magic	./merge-file-parser.cc	/^	uint32_t magic;$/;"	m	struct:file_data	file:
+magic	./reporter.cc	/^	uint32_t magic;$/;"	m	struct:marshalHeaderStruct	file:
+magic	./writer-base.cc	/^	uint32_t magic;$/;"	m	struct:summaryStruct	file:
+main	./line2addr.cc	/^int main(int argc, const char *argv[])$/;"	f
+main	./main.cc	/^int main(int argc, const char *argv[])$/;"	f
+mangleFileName	./cobertura-writer.cc	/^	std::string mangleFileName(std::string name)$/;"	f	class:CoberturaWriter	file:
+marshal	./reporter.cc	/^		uint8_t *marshal(uint8_t *start)$/;"	f	class:Reporter::Line
+marshal	./reporter.cc	/^	void *marshal(size_t *szOut)$/;"	f	class:Reporter
+marshalFile	./merge-file-parser.cc	/^	const struct file_data *marshalFile(const std::string &filename)$/;"	f	class:MergeParser	file:
+marshalHeader	./reporter.cc	/^	uint8_t *marshalHeader(uint8_t *p)$/;"	f	class:Reporter	file:
+marshalHeaderStruct	./reporter.cc	/^struct marshalHeaderStruct$/;"	s	file:
+marshalSummary	./writer-base.cc	/^void *WriterBase::marshalSummary(IReporter::ExecutionSummary &summary,$/;"	f	class:WriterBase
+matchEngine	./engine-factory.cc	/^	IEngine *matchEngine(const std::string &fileName)$/;"	f	class:EngineFactory
+matchFile	./engines/bash-engine.cc	/^	unsigned int matchFile(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:BashEngine
+matchFile	./engines/kernel-engine.cc	/^	unsigned int matchFile(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:KernelEngine
+matchFile	./engines/ptrace.cc	/^	unsigned int matchFile(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:Ptrace
+matchFile	./engines/python-engine.cc	/^	unsigned int matchFile(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:PythonEngine
+matchParser	./engines/bash-engine.cc	/^	unsigned int matchParser(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:BashEngine
+matchParser	./engines/python-engine.cc	/^	unsigned int matchParser(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:PythonEngine
+matchParser	./merge-file-parser.cc	/^	virtual unsigned int matchParser(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:MergeParser
+matchParser	./parser-manager.cc	/^	IFileParser *matchParser(const std::string &fileName)$/;"	f	class:ParserManager
+matchParser	./parsers/elf-parser.cc	/^	unsigned int matchParser(const std::string &filename, uint8_t *data, size_t dataSize)$/;"	f	class:ElfInstance
+match_none	./include/manager.hh	/^		match_none = 0,$/;"	e	enum:kcov::match_type
+match_perfect	./include/manager.hh	/^		match_perfect = 0xffffffff,$/;"	e	enum:kcov::match_type
+match_type	./include/manager.hh	/^	enum match_type$/;"	g	namespace:kcov
+mdelay	./utils.cc	/^void mdelay(unsigned int ms)$/;"	f
+merge_parser	./merge-file-parser.cc	/^namespace merge_parser$/;"	n	file:
+mock_file_exists	./utils.cc	/^void mock_file_exists(bool (*callback)(const std::string &path))$/;"	f
+mock_get_file_timestamp	./utils.cc	/^void mock_get_file_timestamp(uint64_t (*callback)(const std::string &path))$/;"	f
+mock_read_file	./utils.cc	/^void mock_read_file(void *(*callback)(size_t *out_size, const char *path))$/;"	f
+mock_write_file	./utils.cc	/^void mock_write_file(int (*callback)(const void *data, size_t size, const char *path))$/;"	f
+mocked_file_exists_callback	./utils.cc	/^static bool (*mocked_file_exists_callback)(const std::string &path);$/;"	v	file:
+mocked_get_file_timestamp_callback	./utils.cc	/^static uint64_t (*mocked_get_file_timestamp_callback)(const std::string &path);$/;"	v	file:
+mocked_read_callback	./utils.cc	/^static void* (*mocked_read_callback)(size_t* out_size, const char* path);$/;"	v	file:
+mocked_write_callback	./utils.cc	/^static int (*mocked_write_callback)(const void* data, size_t size, const char* path);$/;"	v	file:
+module_name_to_index	./kernel/kprobe-coverage.c	/^static int module_name_to_index(struct kprobe_coverage *kpc,$/;"	f	file:
+module_names	./kernel/kprobe-coverage.c	/^	const char *module_names[32];$/;"	m	struct:kprobe_coverage	file:
+msleep	./utils.cc	/^void msleep(uint64_t ms)$/;"	f
+multilineIdx	./engines/python-engine.cc	/^	size_t multilineIdx(const std::string &s)$/;"	f	class:PythonEngine	file:
+nExecutedLines	./writer-base.cc	/^	uint32_t nExecutedLines;$/;"	m	struct:summaryStruct	file:
+nLines	./writer-base.cc	/^	uint32_t nLines;$/;"	m	struct:summaryStruct	file:
+n_addresses	./merge-file-parser.cc	/^	uint32_t n_addresses;$/;"	m	struct:line_entry	file:
+n_entries	./include/phdr_data.h	/^	uint32_t n_entries;$/;"	m	struct:phdr_data
+n_entries	./merge-file-parser.cc	/^	uint32_t n_entries;$/;"	m	struct:file_data	file:
+n_segments	./include/phdr_data.h	/^	uint32_t n_segments;$/;"	m	struct:phdr_data_entry
+name	./include/phdr_data.h	/^	char name[1024];$/;"	m	struct:phdr_data_entry
+name	./writer-base.cc	/^	char name[256];$/;"	m	struct:summaryStruct	file:
+name_count	./kernel/kprobe-coverage.c	/^	unsigned int name_count;$/;"	m	struct:kprobe_coverage	file:
+name_index	./kernel/kprobe-coverage.c	/^	int name_index; \/* an index into the name table above (0 is always the kernel *\/$/;"	m	struct:kprobe_coverage_entry	file:
+new_entry	./kernel/kprobe-coverage.c	/^static struct kprobe_coverage_entry *new_entry(struct kprobe_coverage *kpc,$/;"	f	file:
+notify	./include/utils.hh	/^	void notify()$/;"	f	class:Semaphore
+onAddress	./merge-file-parser.cc	/^	void onAddress(unsigned long addr, unsigned long hits)$/;"	f	class:MergeParser
+onAddress	./reporter.cc	/^	void onAddress(unsigned long addr, unsigned long hits)$/;"	f	class:Reporter	file:
+onEvent	./collector.cc	/^	void onEvent(const IEngine::Event &ev)$/;"	f	class:Collector	file:
+onFile	./merge-file-parser.cc	/^	void onFile(const std::string &file, enum FileFlags flags)$/;"	f	class:MergeParser
+onFile	./output-handler.cc	/^		void onFile(const std::string &file, enum IFileParser::FileFlags flags)$/;"	f	class:kcov::OutputHandler
+onLine	./collector.cc	/^	void onLine(const std::string &file, unsigned int lineNr, unsigned long addr)$/;"	f	class:Collector	file:
+onLine	./line2addr.cc	/^	void onLine(const std::string &file, unsigned int lineNr,$/;"	f	class:Listener
+onLine	./merge-file-parser.cc	/^	void onLine(const std::string &filename, unsigned int lineNr,$/;"	f	class:MergeParser
+onLine	./reporter.cc	/^	void onLine(const std::string &file, unsigned int lineNr, unsigned long addr)$/;"	f	class:Reporter	file:
+onLine	./writer-base.cc	/^void WriterBase::onLine(const std::string &file, unsigned int lineNr, unsigned long addr)$/;"	f	class:WriterBase
+onStartup	./cobertura-writer.cc	/^	void onStartup()$/;"	f	class:CoberturaWriter
+onStartup	./html-writer.cc	/^	void onStartup()$/;"	f	class:HtmlWriter	file:
+onStartup	./merge-file-parser.cc	/^	void onStartup()$/;"	f	class:MergeParser
+onStop	./cobertura-writer.cc	/^	void onStop()$/;"	f	class:CoberturaWriter
+onStop	./html-writer.cc	/^	void onStop()$/;"	f	class:HtmlWriter
+onStop	./merge-file-parser.cc	/^	void onStop()$/;"	f	class:MergeParser
+paddr	./include/phdr_data.h	/^	unsigned long paddr;$/;"	m	struct:phdr_data_segment
+panic	./include/utils.hh	28;"	d
+panic_if	./include/utils.hh	58;"	d
+parse	./configuration.cc	/^	bool parse(unsigned int argc, const char *argv[])$/;"	f	class:Configuration
+parse	./engines/bash-engine.cc	/^	bool parse()$/;"	f	class:BashEngine
+parse	./engines/python-engine.cc	/^	bool parse()$/;"	f	class:PythonEngine
+parse	./merge-file-parser.cc	/^	virtual bool parse()$/;"	f	class:MergeParser
+parse	./parsers/elf-parser.cc	/^	bool parse()$/;"	f	class:ElfInstance
+parseDirectory	./merge-file-parser.cc	/^	void parseDirectory(const std::string &dirName)$/;"	f	class:MergeParser	file:
+parseFile	./engines/bash-engine.cc	/^	void parseFile(const std::string &filename)$/;"	f	class:BashEngine	file:
+parseFile	./engines/python-engine.cc	/^	void parseFile(const std::string &filename)$/;"	f	class:PythonEngine	file:
+parseFileData	./merge-file-parser.cc	/^	void parseFileData(struct file_data *fd)$/;"	f	class:MergeParser	file:
+parseOne	./merge-file-parser.cc	/^	void parseOne(const std::string &metadataDirName,$/;"	f	class:MergeParser	file:
+parseOneDwarf	./parsers/elf-parser.cc	/^	bool parseOneDwarf()$/;"	f	class:ElfInstance
+parseOneElf	./parsers/elf-parser.cc	/^	bool parseOneElf()$/;"	f	class:ElfInstance
+parseOneLine	./engines/kernel-engine.cc	/^	void parseOneLine(const std::string &line)$/;"	f	class:KernelEngine	file:
+parseStoredData	./merge-file-parser.cc	/^	void parseStoredData()$/;"	f	class:MergeParser	file:
+peekWord	./engines/ptrace.cc	/^	unsigned long peekWord(unsigned long addr)$/;"	f	class:Ptrace	file:
+pending_list	./kernel/kprobe-coverage.c	/^	struct list_head pending_list;  \/* Probes which has not yet triggered *\/$/;"	m	struct:kprobe_coverage	typeref:struct:kprobe_coverage::list_head	file:
+phdrCallback	./solib-parser/lib.c	/^static int phdrCallback(struct dl_phdr_info *info, size_t size, void *data)$/;"	f	file:
+phdrSizeCallback	./solib-parser/lib.c	/^static int phdrSizeCallback(struct dl_phdr_info *info, size_t size, void *data)$/;"	f	file:
+phdr_data	./include/phdr_data.h	/^struct phdr_data$/;"	s
+phdr_data	./solib-parser/lib.c	/^static struct phdr_data *phdr_data;$/;"	v	typeref:struct:phdr_data	file:
+phdr_data_add	./solib-parser/phdr_data.c	/^void phdr_data_add(struct phdr_data *p, struct dl_phdr_info *info)$/;"	f
+phdr_data_entry	./include/phdr_data.h	/^struct phdr_data_entry$/;"	s
+phdr_data_free	./solib-parser/phdr_data.c	/^void phdr_data_free(struct phdr_data *p)$/;"	f
+phdr_data_marshal	./solib-parser/phdr_data.c	/^void *phdr_data_marshal(struct phdr_data *p, size_t *out_sz)$/;"	f
+phdr_data_new	./solib-parser/phdr_data.c	/^struct phdr_data *phdr_data_new(size_t allocSize)$/;"	f
+phdr_data_segment	./include/phdr_data.h	/^struct phdr_data_segment$/;"	s
+phdr_data_unmarshal	./solib-parser/phdr_data.c	/^struct phdr_data *phdr_data_unmarshal(void *p)$/;"	f
+pokeWord	./engines/ptrace.cc	/^	void pokeWord(unsigned long addr, unsigned long val)$/;"	f	class:Ptrace	file:
+possibleHits	./reporter.cc	/^		unsigned int possibleHits()$/;"	f	class:Reporter::Line
+ppc_NIP	./engines/ptrace.cc	/^	ppc_NIP = 32,$/;"	e	enum:__anon2	file:
+printUsage	./configuration.cc	/^	void printUsage()$/;"	f	class:Configuration
+produce	./output-handler.cc	/^		void produce()$/;"	f	class:kcov::OutputHandler
+python_helper_data	./python-helper.cc	/^std::vector<uint8_t> python_helper_data = {$/;"	v
+readCoverageDatum	./engines/python-engine.cc	/^	struct coverage_data *readCoverageDatum(uint8_t *buf, size_t totalSize)$/;"	f	class:PythonEngine	file:
+readFile	./writer-base.cc	/^void WriterBase::File::readFile(const std::string &filename)$/;"	f	class:WriterBase::File
+readMemory	./engines/ptrace.cc	/^	bool readMemory(unsigned long *dst, unsigned long addr)$/;"	f	class:Ptrace
+read_file	./utils.cc	/^void *read_file(size_t *out_size, const char *fmt, ...)$/;"	f
+read_file_int	./utils.cc	/^static void *read_file_int(size_t *out_size, uint64_t timeout, const char *path)$/;"	f	file:
+read_write	./utils.cc	/^static void read_write(FILE *dst, FILE *src)$/;"	f	file:
+realPathCache	./utils.cc	/^static PathMap_t realPathCache;$/;"	v	file:
+registerBreakpoint	./engines/bash-engine.cc	/^	int registerBreakpoint(unsigned long addr)$/;"	f	class:BashEngine
+registerBreakpoint	./engines/kernel-engine.cc	/^	int registerBreakpoint(unsigned long addr)$/;"	f	class:KernelEngine
+registerBreakpoint	./engines/ptrace.cc	/^	int registerBreakpoint(unsigned long addr)$/;"	f	class:Ptrace
+registerBreakpoint	./engines/python-engine.cc	/^	int registerBreakpoint(unsigned long addr)$/;"	f	class:PythonEngine
+registerEngine	./engine-factory.cc	/^	void registerEngine(IEngine &engine)$/;"	f	class:EngineFactory
+registerFileListener	./engines/bash-engine.cc	/^	void registerFileListener(IFileListener &listener)$/;"	f	class:BashEngine
+registerFileListener	./engines/python-engine.cc	/^	void registerFileListener(IFileListener &listener)$/;"	f	class:PythonEngine
+registerFileListener	./merge-file-parser.cc	/^	virtual void registerFileListener(IFileParser::IFileListener &listener)$/;"	f	class:MergeParser
+registerFileListener	./parsers/elf-parser.cc	/^	void registerFileListener(IFileListener &listener)$/;"	f	class:ElfInstance
+registerHit	./reporter.cc	/^		unsigned int registerHit(unsigned long addr, unsigned long hits)$/;"	f	class:Reporter::Line
+registerHits	./merge-file-parser.cc	/^		void registerHits(uint64_t addr, unsigned int hits)$/;"	f	class:MergeParser::File
+registerLineListener	./engines/bash-engine.cc	/^	void registerLineListener(ILineListener &listener)$/;"	f	class:BashEngine
+registerLineListener	./engines/python-engine.cc	/^	void registerLineListener(ILineListener &listener)$/;"	f	class:PythonEngine
+registerLineListener	./merge-file-parser.cc	/^	virtual void registerLineListener(IFileParser::ILineListener &listener)$/;"	f	class:MergeParser
+registerLineListener	./parsers/elf-parser.cc	/^	void registerLineListener(ILineListener &listener)$/;"	f	class:ElfInstance
+registerListener	./collector.cc	/^	void registerListener(ICollector::IListener &listener)$/;"	f	class:Collector
+registerListener	./merge-file-parser.cc	/^	virtual void registerListener(ICollector::IListener &listener)$/;"	f	class:MergeParser
+registerParser	./parser-manager.cc	/^	void registerParser(IFileParser &parser)$/;"	f	class:ParserManager
+registerWriter	./output-handler.cc	/^		void registerWriter(IWriter &writer)$/;"	f	class:kcov::OutputHandler
+report	./line2addr.cc	/^	void report(unsigned long addr)$/;"	f	class:Listener	file:
+reportEvent	./engines/bash-engine.cc	/^	void reportEvent(enum event_type type, int data = -1, uint64_t address = 0)$/;"	f	class:BashEngine	file:
+reportEvent	./engines/python-engine.cc	/^	void reportEvent(enum event_type type, int data = -1, uint64_t address = 0)$/;"	f	class:PythonEngine	file:
+report_trace	./engines/python-helper.py	/^def report_trace(file, line):$/;"	f
+report_trace2	./engines/python-helper.py	/^def report_trace2(file, line):$/;"	f
+report_trace3	./engines/python-helper.py	/^def report_trace3(file, line):$/;"	f
+run	./collector.cc	/^	int run(const std::string &filename)$/;"	f	class:Collector
+run	./merge-file-parser.cc	/^	virtual int run(const std::string &filename)$/;"	f	class:MergeParser
+runFilters	./filter.cc	/^	bool runFilters(const std::string &file)$/;"	f	class:DummyFilter
+runFilters	./filter.cc	/^	bool runFilters(const std::string &file)$/;"	f	class:Filter
+runctx	./engines/python-helper.py	/^def runctx(cmd, globals=None, locals=None):$/;"	f
+segments	./include/phdr_data.h	/^	struct phdr_data_segment segments[64];$/;"	m	struct:phdr_data_entry	typeref:struct:phdr_data_entry::phdr_data_segment
+setLocal	./merge-file-parser.cc	/^		void setLocal()$/;"	f	class:MergeParser::File
+setOutputType	./configuration.cc	/^	void setOutputType(enum OutputType type)$/;"	f	class:Configuration
+setParseSolibs	./configuration.cc	/^	void setParseSolibs(bool on)$/;"	f	class:Configuration
+setup	./filter.cc	/^	void setup()$/;"	f	class:Filter
+setupAllBreakpoints	./engines/bash-engine.cc	/^	void setupAllBreakpoints()$/;"	f	class:BashEngine
+setupAllBreakpoints	./engines/kernel-engine.cc	/^	void setupAllBreakpoints()$/;"	f	class:KernelEngine
+setupAllBreakpoints	./engines/ptrace.cc	/^	void setupAllBreakpoints()$/;"	f	class:Ptrace
+setupAllBreakpoints	./engines/python-engine.cc	/^	void setupAllBreakpoints()$/;"	f	class:PythonEngine
+setupCommonPaths	./writer-base.cc	/^void WriterBase::setupCommonPaths()$/;"	f	class:WriterBase
+singleStep	./engines/ptrace.cc	/^	void singleStep()$/;"	f	class:Ptrace
+size	./engines/python-engine.cc	/^	uint32_t size;$/;"	m	struct:coverage_data	file:
+size	./include/phdr_data.h	/^	unsigned long size;$/;"	m	struct:phdr_data_segment
+size	./merge-file-parser.cc	/^	uint32_t size;$/;"	m	struct:file_data	file:
+solibThreadMain	./engines/ptrace.cc	/^	void solibThreadMain()$/;"	f	class:Ptrace
+source_file_text_data	./html-data-files.cc	/^std::vector<uint8_t> source_file_text_data = {$/;"	v
+split	./utils.cc	/^static std::vector<std::string> &split(const std::string &s, char delim,$/;"	f	file:
+splitPath	./configuration.cc	/^	StringPair_t splitPath(const char *pathStr)$/;"	f	class:Configuration
+split_string	./utils.cc	/^std::vector<std::string> split_string(const std::string &s, const char *delims)$/;"	f
+start	./engines/bash-engine.cc	/^	bool start(IEventListener &listener, const std::string &executable)$/;"	f	class:BashEngine
+start	./engines/kernel-engine.cc	/^	bool start(IEventListener &listener, const std::string &executable)$/;"	f	class:KernelEngine
+start	./engines/ptrace.cc	/^	bool start(IEventListener &listener, const std::string &executable)$/;"	f	class:Ptrace
+start	./engines/python-engine.cc	/^	bool start(IEventListener &listener, const std::string &executable)$/;"	f	class:PythonEngine
+start	./output-handler.cc	/^		void start()$/;"	f	class:kcov::OutputHandler
+statCache	./utils.cc	/^static std::unordered_map<std::string, bool> statCache;$/;"	v	file:
+std	./cobertura-writer.cc	/^namespace std { class type_info; }$/;"	n	file:
+stop	./collector.cc	/^	virtual void stop()$/;"	f	class:Collector
+stop	./output-handler.cc	/^		void stop()$/;"	f	class:kcov::OutputHandler
+stop	./reporter.cc	/^	virtual void stop()$/;"	f	class:Reporter
+str	./engines/ptrace.cc	30;"	d	file:
+string_is_integer	./utils.cc	/^bool string_is_integer(const std::string &str, unsigned base)$/;"	f
+string_to_integer	./utils.cc	/^int64_t string_to_integer(const std::string &str, unsigned base)$/;"	f
+summaryStruct	./writer-base.cc	/^struct summaryStruct$/;"	s	file:
+swap_endian	./include/swap-endian.hh	/^T swap_endian(T u)$/;"	f
+tablesorter_text_data	./html-data-files.cc	/^std::vector<uint8_t> tablesorter_text_data = {$/;"	v
+tablesorter_theme_text_data	./html-data-files.cc	/^std::vector<uint8_t> tablesorter_theme_text_data = {$/;"	v
+tablesorter_widgets_text_data	./html-data-files.cc	/^std::vector<uint8_t> tablesorter_widgets_text_data = {$/;"	v
+tempo_text_data	./html-data-files.cc	/^std::vector<uint8_t> tempo_text_data = {$/;"	v
+threadStatic	./engines/ptrace.cc	/^	static void *threadStatic(void *pThis)$/;"	f	class:Ptrace
+timestamp	./merge-file-parser.cc	/^	uint64_t timestamp;$/;"	m	struct:file_data	file:
+to_be	./include/swap-endian.hh	/^T to_be(T u)$/;"	f
+trace_calls	./engines/python-helper.py	/^def trace_calls(frame, event, arg):$/;"	f
+trace_lines	./engines/python-helper.py	/^def trace_lines(frame, event, arg):$/;"	f
+trim_string	./utils.cc	/^std::string trim_string(const std::string &strIn)$/;"	f
+type	./include/engine.hh	/^			enum event_type type;$/;"	m	class:kcov::IEngine::Event	typeref:enum:kcov::IEngine::Event::event_type
+unMarshal	./reporter.cc	/^		static uint8_t *unMarshal(uint8_t *p,$/;"	f	class:Reporter::Line
+unMarshal	./reporter.cc	/^	bool unMarshal(void *data, size_t sz)$/;"	f	class:Reporter
+unMarshalFile	./merge-file-parser.cc	/^	bool unMarshalFile(struct file_data *fd)$/;"	f	class:MergeParser	file:
+unMarshalHeader	./reporter.cc	/^	uint8_t *unMarshalHeader(uint8_t *p)$/;"	f	class:Reporter	file:
+unMarshalSummary	./writer-base.cc	/^bool WriterBase::unMarshalSummary(void *data, size_t sz,$/;"	f	class:WriterBase
+uncommonOptions	./configuration.cc	/^	std::string uncommonOptions()$/;"	f	class:Configuration
+unmarshalCoverageData	./engines/python-engine.cc	/^	void unmarshalCoverageData(struct coverage_data *p)$/;"	f	class:PythonEngine	file:
+usage	./configuration.cc	/^	bool usage(void)$/;"	f	class:Configuration
+vaddr	./include/phdr_data.h	/^	unsigned long vaddr;$/;"	m	struct:phdr_data_segment
+version	./include/phdr_data.h	/^	uint32_t version;$/;"	m	struct:phdr_data
+version	./merge-file-parser.cc	/^	uint32_t version;$/;"	m	struct:file_data	file:
+version	./writer-base.cc	/^	uint32_t version;$/;"	m	struct:summaryStruct	file:
+wait	./include/utils.hh	/^	void wait()$/;"	f	class:Semaphore
+waitEvent	./engines/ptrace.cc	/^	const Event waitEvent()$/;"	f	class:Ptrace
+wait_queue	./kernel/kprobe-coverage.c	/^	wait_queue_head_t wait_queue;$/;"	m	struct:kprobe_coverage	file:
+warning	./include/utils.hh	21;"	d
+work	./kernel/kprobe-coverage.c	/^	struct work_struct work;$/;"	m	struct:kprobe_coverage_entry	typeref:struct:kprobe_coverage_entry::work_struct	file:
+workqueue	./kernel/kprobe-coverage.c	/^	struct workqueue_struct *workqueue;$/;"	m	struct:kprobe_coverage	typeref:struct:kprobe_coverage::workqueue_struct	file:
+write	./cobertura-writer.cc	/^	void write()$/;"	f	class:CoberturaWriter
+write	./html-writer.cc	/^	void write()$/;"	f	class:HtmlWriter	file:
+write	./merge-file-parser.cc	/^	void write()$/;"	f	class:MergeParser
+writeGlobalIndex	./html-writer.cc	/^	void writeGlobalIndex()$/;"	f	class:HtmlWriter	file:
+writeHelperFiles	./html-writer.cc	/^	void writeHelperFiles(std::string dir)$/;"	f	class:HtmlWriter	file:
+writeIndex	./html-writer.cc	/^	void writeIndex()$/;"	f	class:HtmlWriter	file:
+writeOne	./cobertura-writer.cc	/^	std::string writeOne(File *file)$/;"	f	class:CoberturaWriter	file:
+writeOne	./html-writer.cc	/^	void writeOne(File *file)$/;"	f	class:HtmlWriter	file:
+write_file	./utils.cc	/^int write_file(const void *data, size_t len, const char *fmt, ...)$/;"	f
+write_file_int	./utils.cc	/^static int write_file_int(const void *data, size_t len, uint64_t timeout, const char *path)$/;"	f	file:
+x86_64_RIP	./engines/ptrace.cc	/^	x86_64_RIP = 16,$/;"	e	enum:__anon2	file:
+xmalloc	./include/utils.hh	/^static inline void *xmalloc(size_t sz)$/;"	f
+xrealloc	./include/utils.hh	/^static inline void *xrealloc(void *p, size_t sz)$/;"	f
+xsnprintf	./include/utils.hh	100;"	d
+xstr	./engines/ptrace.cc	31;"	d	file:
+xstrdup	./include/utils.hh	/^static inline char *xstrdup(const char *s)$/;"	f
+xwrite_file	./include/utils.hh	95;"	d
+~BashEngine	./engines/bash-engine.cc	/^	~BashEngine()$/;"	f	class:BashEngine
+~DummyFilter	./filter.cc	/^	~DummyFilter()$/;"	f	class:DummyFilter
+~ElfInstance	./parsers/elf-parser.cc	/^	virtual ~ElfInstance()$/;"	f	class:ElfInstance
+~Filter	./filter.cc	/^	~Filter()$/;"	f	class:Filter
+~ICollector	./include/collector.hh	/^		virtual ~ICollector() {};$/;"	f	class:kcov::ICollector
+~IConfiguration	./include/configuration.hh	/^		virtual ~IConfiguration() {}$/;"	f	class:kcov::IConfiguration
+~IEngine	./include/engine.hh	/^		virtual ~IEngine() {}$/;"	f	class:kcov::IEngine
+~IEngineFactory	./include/engine.hh	/^		virtual ~IEngineFactory()$/;"	f	class:kcov::IEngineFactory
+~IFileParser	./include/file-parser.hh	/^		virtual ~IFileParser() {}$/;"	f	class:kcov::IFileParser
+~IFilter	./include/filter.hh	/^		virtual ~IFilter() {}$/;"	f	class:kcov::IFilter
+~IOutputHandler	./include/output-handler.hh	/^		virtual ~IOutputHandler() {}$/;"	f	class:kcov::IOutputHandler
+~IParserManager	./include/file-parser.hh	/^		virtual ~IParserManager()$/;"	f	class:kcov::IParserManager
+~IReporter	./include/reporter.hh	/^		virtual ~IReporter() {}$/;"	f	class:kcov::IReporter
+~IWriter	./include/writer.hh	/^		virtual ~IWriter() {}$/;"	f	class:kcov::IWriter
+~KernelEngine	./engines/kernel-engine.cc	/^	~KernelEngine()$/;"	f	class:KernelEngine
+~Listener	./line2addr.cc	/^	virtual ~Listener()$/;"	f	class:Listener
+~OutputHandler	./output-handler.cc	/^		~OutputHandler()$/;"	f	class:kcov::OutputHandler
+~Ptrace	./engines/ptrace.cc	/^	~Ptrace()$/;"	f	class:Ptrace
+~PythonEngine	./engines/python-engine.cc	/^	~PythonEngine()$/;"	f	class:PythonEngine
+~Reporter	./reporter.cc	/^	~Reporter()$/;"	f	class:Reporter
+~Semaphore	./include/utils.hh	/^	~Semaphore()$/;"	f	class:Semaphore

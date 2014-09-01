@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+f21ad5987fd43f438da44151a56c453b src/html-data-files.cc
+6e13efcc9c3599cd32c7ac12098afeef src/library.cc
+23d9f3dabf74fe5d7a34f2a0f063a4b0 src/python-helper.cc

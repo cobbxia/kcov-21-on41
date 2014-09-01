@@ -1,0 +1,359 @@
+Kcov (21):
+	* Fix regression for coverage-of-32-bit-binaries-on-64-bit-systems introduced
+	  in kcov 20
+
+	* Slightly better file stat caching (slight performance improvement)
+
+	* Avoid outputting merged cobertura output for single coverage runs
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Thu Aug  7 20:00:20 CEST 2014
+
+Kcov (20):
+	* Issue #25: Fix starvation bug where long report generation time could starve
+	  the actual application. The bug was caused by a timestamp issue.
+
+	* Issue #18: Provide explanation and possible workaround for SIGILL problems
+	  with GCC 4.1.2
+
+	* Issue #23: Warn if a binary has no debug symbols
+
+	* Replace std::list/std::map with std::list/std::unordered_map where possible
+	  (slight performance improvement)
+
+	* Remove C++11 constructs (auto, nullptr, range-based for-loops) to allow
+	  building with older compilers
+
+	* Correct bug in --report-only (crash in ptrace upon termination)
+
+	* Slight performance improvement and simplification in the lineid code
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Mon Aug  4 12:57:19 CEST 2014
+
+Kcov (19):
+	* bash coverage: Implemented support for collecting shell script
+	  (sh/bash) coverage! Loosely based on shcov, which is now deprecated
+	  because of this
+
+	* html-writer: Correct executable lines/covered lines in the summary
+	  (was wrong in some cases)
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Mon Jun 30 18:30:37 CEST 2014
+
+Kcov (18):
+	* Performance: Improve performance by cacheing realpath()
+
+	* HTML: Always put merged results last and don't include them in sorting
+
+	* HTML: Coloring improvements (?) of the HTML output
+
+	* HTML: Refactor HTML output completely to use javascript-based pages.
+	  This allows selecting how to sort directly from the web page,
+	  and greatly simplifies the generating C++ code
+
+	* Correct filtering bug in the merged output, where the last
+	  run would filter out data from the previous runs
+
+	* Issue #20: Fix hanging-on-killed-by-signal
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Mon Jun  9 19:12:38 CEST 2014
+
+Kcov (17):
+	* Issue #19: Fix bug where kcov would let children which called
+	  setpgid live even after terminating kcov itself (Oliver)
+
+	* Issue #16: Output: Implement a merged mode, which shows a
+	  combination of all covered programs under the [merged] link
+
+	* Fix an HTML output bug introduced in kcov 14 where the summary
+	  counts in the index page would be wrong.
+
+	* Issue #15: Fix a crash when source lines are > ~2000 characters long
+
+	* Issue #17: Fix parsing of multiple include/exclude patterns
+	  (Jamie Kirkpatrick)
+
+	* Split usage in common/uncommon options
+
+	* Improve unit tests and robot framework tests
+
+	* Various work on the kernel-engine and general refactoring
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sun May 18 19:24:14 CEST 2014
+
+Kcov (16):
+	* kernel-engine: Implement an engine to handle kernel code coverage
+	  collection (not finished)
+
+	* kprobe-coverage: Refactor the kernel module so that it basically
+	  works now
+
+	* Code refactoring and more C++11-izing
+
+	* Python: Filter out some false negatives (i.e., non-executable
+	  lines marked as red)
+
+	* Python: Report absolute paths so that output filtering works
+
+	* Python: Catch exceptions in the python helper to avoid EOF etc
+	  being propagated upwards (and coverage collection to fail)
+
+	* Python: Fix a case where the engine would simply hang on waiting
+	  for more data
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Fri Mar 21 16:38:28 CET 2014
+
+
+Kcov (15):
+	* Workaround a shared-library issue where kcov would sometimes hang on
+	  the malloc. The workaround uses a static memory buffer instead.
+
+	* Implemented support for collecting Python code coverage! Usage is the
+	  same as for compiled code.
+
+	* Code-restructuring to allow multiple "engines", which makes it possible
+	  to add the python support above.
+
+	* More C++11-izing of the code
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sun Mar  2 10:50:00 CET 2014
+
+
+Kcov (14):
+	* Add two options, --collect-only and --report-only to only collect
+	  coverage and produce Cobertura/HTML output respectively. Can be
+	  used for example on embedded systems where the source code isn't
+	  available.
+
+	* PowerPC support has been added (thanks to Aleksandr Vilchinskii and
+	  Konstantin Polivtsev for testing this)
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Wed Feb  5 19:42:03 CET 2014
+
+
+Kcov (13):
+	* Don't hang the kcov main process if a breakpoint comes in
+	  before the solib handler constructor has executed (depends on
+	  the construction order)
+
+	* Correct bug with realloc in solib handling (malloc all
+	  data once only)
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sun Dec  8 19:34:37 CET 2013
+
+Kcov (12):
+	* Fix lockup bug in the solib code path (where processes with
+	  many solibs would hang at startup)
+
+	* Correct a crash in the reporter
+
+	* Add test case for signals
+
+	* Report from main thread to avoid threading issues
+	
+	* Fairly major refactoring of ptrace code to avoid an issue
+	  where two PTRACE_CONTINUE calls could be done without
+	  waitpid() in between. This would cause crashes in the
+	  traced program.
+
+	* Add support for looking for debug info in separate files
+	  via build-id (Alexander Larsson)
+
+	* Add --exit-first-process option to fork kcov when covering
+	  daemons (otherwise kcov will wait for all children to finish)
+
+	* Add --skip-solibs option to disable processing of shared
+	  libraries, which also works around a bug which sometimes
+	  triggers 
+
+	* Add --replace-source-path option for cases where the sources
+	  have been moved (James Warner)
+
+	* Fix linking (Igor Murzov) 
+
+	* Some build fixes to make it build with clang++
+
+	* Fix various warnings
+
+	* Add experimental profiler based on kcov
+
+	* Add sorting by reverse-percent (high -> low, -u option)
+
+	* Cache non-existing files to avoid doing lstat calls all the
+	  time (slight performance improvement)
+
+	* closedir() was not called from the html-writer, which creates
+	  a resource leak (Karl Vogel)
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sat Oct 19 11:06:42 CEST 2013
+	
+
+Kcov (11):
+	* Fix handling of common paths in HTML writer
+
+	* Fix bug in shared library handling where repeated exec()s would
+	  cause strange hangs. Fixed by unsetting the KCOV_SOLIB_PATH environment
+	  variable after the first executable has been started.
+	  Add test-popen test case to check for this.
+
+	* Expand ~'s in the --include-path and --exclude-path options
+
+	* Unbreak accumulating data from multiple runs again (introduced
+	  sometime during refactoring), and add test case for this
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sat Aug 18 08:45:03 CEST 2012
+
+Kcov (10):
+	* Fix bug where multiple files with the same name would only be shown
+	  once in the HTML output.
+
+	* Fix icache conflict bug (present while instrumenting shared libraries)
+	  on multi-CPU systems by forcing all traced processes to one CPU
+
+	* Re-enable the --pid=PID argument to trace a running process again
+
+	* Fix race condition in the reporter
+
+	* Only set breakpoints in executable sections. This avoids problems where
+	  the DWARF line information points to non-code sections (which can happen)
+
+	* Fix coverage reporting of orphaned children (where the parent does not
+	  wait(2) for the child
+
+	* Use std::unordered_map for breakpoints (improves performance somewhat)
+
+	* Improve unit tests
+
+	* Add robot-framework testsuite that can be run from a Jenkins server
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Mon Jul 23 13:28:43 CEST 2012
+	
+Kcov (9):
+	* Completely refactor the source code (yes, everything!), and add
+	  unit tests to verify kcov itself. The code is now in C++.
+	  
+	* Implement transparent coverage instrumentation for shared libraries
+	  (done automatically)
+	  
+	* Implement a Cobertura-compatible XML backend. This allows integrating
+	  kcov coverage information in Jenkins.
+	  
+	* Improve performance a lot by filtering out files already at the
+	  instrumentation step (and not only during HTML generation). This
+	  means that --include-pattern/--include-path can improve kcov performance
+	  by quite a bit.
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Fri Jun 15 17:39:17 CEST 2012
+
+Kcov (8):
+	* Import the man-page from Debian and update it.
+
+	* Simplify parts of the ptrace code
+
+	* Correct the sorting of files-by-percentage when the difference
+	  is less than 0.5% (thanks Martin!).
+
+	* Correct the percentage-bar color according to the configured
+	  limits in the report.
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sun Dec  4 14:13:47 CET 2011
+
+Kcov (7):
+	* Weed out common parts of source paths from the report, display
+	  the full path as the HTML title= tag
+
+	* Fix crash bug in argument passing
+
+	* Handle hit count a bit better
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, 2011-07-10
+
+Kcov (6):
+	* Correct hit count. The hit count is no longer over the number of
+	  possible hits
+
+	* Better error reporting when stripped or otherwise broken binaries
+	  are passed to kcov
+
+	* Handle files with relative directory paths (lookup the absolute
+	  path via DWARF source files). Otherwise, some files are not reported
+	  in the output.
+
+	* Add test program to detect regressions
+
+	* Detect stripped binaries and report that you'll need to build
+	  with -g
+
+	* Correct --include/exclude-path behavior. The previous version
+	  will match PATH*/* instead of just PATH/* (Igor Murzov)
+	  
+	* Various small fixes 
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sat Apr 16 08:28:27 CEST 2011
+
+Kcov (5):
+	* Switch from libdwarf to libdw (from elfutils) for building
+	  kcov. libdw is a bit more logical than libdwarf.
+	  
+	* Implement actual path matching (Igor Murzov)
+
+	* Rename path-matching to pattern matching (which is what it does)
+	  and set it up using long options.
+
+	* Parse options with getopt
+
+	* Don't escape all multibyte characters in the report. That will
+	  break display of UTF-8 etc (Igor Murzov)
+
+	* Improve cmake packaging support (Igor Murzov)
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sat Feb 12 15:25:57 CET 2011
+
+Kcov (4):
+	* Build system is now based on cmake (Igor Murzov)
+
+	* Add MIPS32, ARM and PowerPC architecture support. This is untested though
+	  and might very well not work at all. 
+	  
+	* Add -t option to set the title of the program to test (otherwise it
+	  will be the filename) 
+
+	* Refactored the architecture support to allow running i386 programs
+	  on x86_64 machines, and easier add other architectures
+
+	* Make it possible to collect coverage from multiple programs in a
+	  single directory, useful for example when running a test suite
+
+	* Add coverage color to the header as well
+
+	* Misc refactoring  
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Tue Dec  7 18:20:28 CET 2010
+
+Kcov (3):
+	* Various bug fixes
+
+	* Add ability to trace running processes by PID
+
+	* Fix copyright headers
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sat Nov 13 08:13:03 CET 2010
+
+Kcov (2):
+	* Misc fixes
+
+	* Add ability to specify low/high limits
+
+	* Add state saving between runs. Re-starting the same program
+	  will then add to existing coverage instead of starting from
+	  scratch.
+
+	* Link to web page in the report
+
+	* Add option to sort by percentage or file name
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>, Sun Oct 24 09:15:39 CEST 2010
+
+Kcov (1):
+	* Initial release
+
+	-- Simon Kagstrom <simon.kagstrom@gmail.com>

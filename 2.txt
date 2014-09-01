@@ -1,0 +1,10 @@
+kcov/kcov-21/src/utils.cc: In function ‘int kcov_get_current_cpu()’:
+kcov/kcov-21/src/utils.cc:337: error: ‘sched_getcpu’ was not declared in this scope
+kcov/kcov-21/src/utils.cc: In function ‘void kcov_tie_process_to_cpu(pid_t, int)’:
+kcov/kcov-21/src/utils.cc:345: error: ‘CPU_ALLOC’ was not declared in this scope
+kcov/kcov-21/src/utils.cc:348: error: ‘CPU_ALLOC_SIZE’ was not declared in this scope
+kcov/kcov-21/src/utils.cc:348: error: ‘CPU_ZERO_S’ was not declared in this scope
+kcov/kcov-21/src/utils.cc:352: error: ‘CPU_FREE’ was not declared in this scope
+make[2]: *** [src/CMakeFiles/kcov.dir/utils.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/kcov.dir/all] Error 2
+make: *** [all] Error 2

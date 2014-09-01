@@ -1,0 +1,3 @@
+/home/mingchao.xiamc/practice/c/kcov/kcov-21/src/CMakeFiles/kcov.dir
+/home/mingchao.xiamc/practice/c/kcov/kcov-21/src/CMakeFiles/kcov_sowrapper.dir
+/home/mingchao.xiamc/practice/c/kcov/kcov-21/src/CMakeFiles/line2addr.dir

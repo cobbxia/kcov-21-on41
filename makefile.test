@@ -1,0 +1,13 @@
+# Default target executed when no arguments are given to make.
+default_target: all
+.PHONY : default_target
+
+# The main recursive all target
+all:
+.PHONY : all
+
+all: src/CMakeFiles/kcov.dir/all
+.PHONY : all
+
+
+src/CMakeFiles/kcov.dir/all

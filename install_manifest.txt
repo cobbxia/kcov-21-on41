@@ -1,0 +1,2 @@
+/usr/local/bin/kcov
+/usr/local/share/man/man1/kcov.1
